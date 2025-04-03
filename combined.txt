@@ -1,0 +1,3772 @@
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_Arena.as ====
+Object.registerClass("LayerDef_Arena",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_ArenaNight.as ====
+Object.registerClass("LayerDef_ArenaNight",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_Houses.as ====
+Object.registerClass("LayerDef_Houses",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_HousesFarAway.as ====
+Object.registerClass("LayerDef_HousesFarAway",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_HousesFarAwayNight.as ====
+Object.registerClass("LayerDef_HousesFarAwayNight",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_HousesNight.as ====
+Object.registerClass("LayerDef_HousesNight",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_Sky.as ====
+Object.registerClass("LayerDef_Sky",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_SkyNight.as ====
+Object.registerClass("LayerDef_SkyNight",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_Sun.as ====
+Object.registerClass("LayerDef_Sun",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_SunNight.as ====
+Object.registerClass("LayerDef_SunNight",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_Trees.as ====
+Object.registerClass("LayerDef_Trees",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\LayerDef_TreesNight.as ====
+Object.registerClass("LayerDef_TreesNight",kage.classes.layer);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\mc3DEagle.as ====
+Object.registerClass("mc3DEagle",kage.classes.kage3d);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\mc3D_dart.as ====
+Object.registerClass("mc3D_dart",kage.classes.kage3d);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\mc3D_square.as ====
+Object.registerClass("mc3D_square",kage.classes.kage3d);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\mc_radiobutton.as ====
+Object.registerClass("mc_radiobutton",kage.classes.radiobutton);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\mc_slider.as ====
+Object.registerClass("mc_slider",kage.classes.slider);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\mov_ArenaAllNight.as ====
+Object.registerClass("mov_ArenaAllNight",ArenaDay);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\%3C默认包%3E\mov_ArenaDay.as ====
+Object.registerClass("mov_ArenaDay",ArenaDay);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_135\BUTTONCONDACTION on(rollOut).as ====
+on(rollOut){
+   pilen.gotoAndPlay(11);
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_135\BUTTONCONDACTION on(rollOver).as ====
+on(rollOver){
+   pilen.gotoAndPlay(2);
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_310\BUTTONCONDACTION on(release).as ====
+on(release){
+   _root.sfx_gui_slide.start();
+   _parent._parent._parent._parent.resetThrow();
+   _parent._parent.play();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_310\BUTTONCONDACTION on(rollOut).as ====
+on(rollOut){
+   gear1.stop();
+   gear2.stop();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_310\BUTTONCONDACTION on(rollOver).as ====
+on(rollOver){
+   gear1.play();
+   gear2.play();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_318\BUTTONCONDACTION on(release).as ====
+on(release){
+   if(_parent._parent.OnChallenge != null)
+   {
+      _parent._parent.OnChallenge();
+   }
+   _parent._parent.gotoAndPlay(21);
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_318\BUTTONCONDACTION on(rollOut).as ====
+on(rollOut){
+   gotoAndStop(1);
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_318\BUTTONCONDACTION on(rollOver).as ====
+on(rollOver){
+   _root.sfx_gui_click.start();
+   gotoAndPlay(2);
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_335\BUTTONCONDACTION on(release).as ====
+on(release){
+   if(_parent._parent.OnPractice != null)
+   {
+      _parent._parent.OnPractice();
+   }
+   _parent._parent.play();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_335\BUTTONCONDACTION on(rollOut).as ====
+on(rollOut){
+   gubbar.gotoAndStop(1);
+   gotoAndStop(1);
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineButton2_335\BUTTONCONDACTION on(rollOver).as ====
+on(rollOver){
+   _root.sfx_gui_click.start();
+   gubbar.gotoAndPlay(2);
+   gotoAndStop(2);
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_10_mc3D_dart\frame_1\DoAction.as ====
+function onInitObject()
+{
+   pointsArray = [make3DPoint(3,-0.45,-141.4),make3DPoint(3,-0.45,142.1),make3DPoint(-3,-0.45,-141.4),make3DPoint(-3,-0.45,142.1),make3DPoint(89,0,-80.33334),make3DPoint(89,0,-141.5),make3DPoint(102.1667,0,-113.1667),make3DPoint(102.1667,0,-141.5),make3DPoint(-89,0,-80.33334),make3DPoint(-89,0,-141.5),make3DPoint(-102.1667,0,-113.1667),make3DPoint(-102.1667,0,-141.5),make3DPoint(-3,-0.45,142.1),make3DPoint(-78,0,-141.45),make3DPoint(-70,0,-130.7833),make3DPoint(-18.33333,0,-130.1167),make3DPoint(-13,0,-141.1167),make3DPoint(13,0,-141.1167),make3DPoint(19.66667,0,-130.45),make3DPoint(78,0,-141.1167),make3DPoint(71,0,-129.7833),make3DPoint(3,-0.45,-141.4),make3DPoint(3,-0.45,-141.4),make3DPoint(3,-0.45,142.1),make3DPoint(0,-13.45,-141.4),make3DPoint(0,-13.45,-141.4),make3DPoint(0,-13.45,142.1),make3DPoint(0,-13.45,178.1),make3DPoint(-3,-0.45,-141.4),make3DPoint(-3,-0.45,-141.4),make3DPoint(-3,-0.45,142.1)];
+   faceArray = [{points:[4,6,5],color:1},{points:[6,7,5],color:1},{points:[9,10,8],color:1},{points:[9,11,10],color:1},{points:[8,12,9],color:1},{points:[1,4,5],color:1},{points:[18,20,19],color:1},{points:[19,17,18],color:1},{points:[20,5,19],color:1},{points:[18,17,0],color:1},{points:[15,2,16],color:1},{points:[14,15,16],color:1},{points:[16,13,14],color:1},{points:[13,9,14],color:1},{points:[15,3,2],color:1},{points:[14,3,15],color:1},{points:[3,14,9],color:1},{points:[1,5,20],color:1},{points:[20,18,1],color:1},{points:[1,18,0],color:1},{points:[24,25,22],color:2},{points:[24,22,21],color:2},{points:[22,25,26],color:2},{points:[22,26,23],color:2},{points:[26,27,23],color:2},{points:[29,25,24],color:2},{points:[28,29,24],color:2},{points:[26,25,29],color:2},{points:[30,26,29],color:2},{points:[30,27,26],color:2}];
+}
+function modifyModel(elevator, winglets)
+{
+   pointsArray[13].y = elevator / 10 * __scale;
+   pointsArray[16].y = elevator / 10 * __scale;
+   pointsArray[17].y = elevator / 10 * __scale;
+   pointsArray[19].y = elevator / 10 * __scale;
+   if(winglets == 1)
+   {
+      pointsArray[6].x = 89 * __scale;
+      pointsArray[6].y = 13 * __scale;
+      pointsArray[7].x = 89 * __scale;
+      pointsArray[7].y = 13 * __scale;
+      pointsArray[10].x = -89 * __scale;
+      pointsArray[10].y = 13 * __scale;
+      pointsArray[11].x = -89 * __scale;
+      pointsArray[11].y = 13 * __scale;
+   }
+   else
+   {
+      pointsArray[6].x = 102.1667 * __scale;
+      pointsArray[6].y = 0;
+      pointsArray[7].x = 102.1667 * __scale;
+      pointsArray[7].y = 0;
+      pointsArray[10].x = -102.1667 * __scale;
+      pointsArray[10].y = 0;
+      pointsArray[11].x = -102.1667 * __scale;
+      pointsArray[11].y = 0;
+   }
+}
+onInitObject();
+colorArray = [{back:4155525,front:14674411},{back:4155525,front:14674411},{back:5208213,front:15727099}];
+SetScale(0.8);
+onInitObject();
+rx = -0.24;
+ry = -0.48;
+rz = -3.1;
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_11_mc3DEagle\frame_1\DoAction.as ====
+function onInitObject()
+{
+   pointsArray = [make3DPoint(4,0,-79),make3DPoint(4,0,0.5),make3DPoint(4,0,80),make3DPoint(0,-36.5,-73.5),make3DPoint(0,-23.5,0.5),make3DPoint(0,-12,81.5),make3DPoint(2,-10.41667,-46.83334),make3DPoint(2,-6.833334,51.5),make3DPoint(-4,0,-79),make3DPoint(-4,0,0.5),make3DPoint(-4,0,80),make3DPoint(-2,-10.41667,-46.83334),make3DPoint(-2,-6.833334,51.5),make3DPoint(4,0,-79),make3DPoint(4,0,0.5),make3DPoint(4,0,80),make3DPoint(18.83333,0,80.16667),make3DPoint(65,0,-20),make3DPoint(65,0,-79),make3DPoint(75.5,0,-79),make3DPoint(79.5,0,-51),make3DPoint(20.5,0,-79),make3DPoint(49,0,-79),make3DPoint(49,0,-69),make3DPoint(20.5,0,-69),make3DPoint(22.05556,0,-10.63889),make3DPoint(-4,0,-79),make3DPoint(-65,0,-20),make3DPoint(-65,0,-79),make3DPoint(-75.5,0,-79),make3DPoint(-79.5,0,-51),make3DPoint(-20.5,0,-79),make3DPoint(-49,0,-79),make3DPoint(-49,0,-69),make3DPoint(-20.5,0,-69),make3DPoint(-21.5,0,79.66667)];
+   faceArray = [{points:[6,3,4],color:0},{points:[6,4,1],color:0},{points:[7,5,2],color:0},{points:[7,2,1],color:0},{points:[0,3,6],color:0},{points:[0,6,1],color:0},{points:[4,7,1],color:0},{points:[4,5,7],color:0},{points:[4,3,11],color:0},{points:[9,4,11],color:0},{points:[10,5,12],color:0},{points:[9,10,12],color:0},{points:[11,3,8],color:0},{points:[9,11,8],color:0},{points:[9,12,4],color:0},{points:[12,5,4],color:0},{points:[17,20,19],color:1},{points:[19,18,17],color:1},{points:[17,18,23],color:1},{points:[18,22,23],color:1},{points:[23,22,21],color:1},{points:[21,24,23],color:1},{points:[24,17,23],color:1},{points:[24,21,13],color:1},{points:[15,25,14],color:1},{points:[15,16,25],color:1},{points:[14,25,13],color:1},{points:[25,24,13],color:1},{points:[29,30,27],color:1},{points:[27,28,29],color:1},{points:[33,28,27],color:1},{points:[33,32,28],color:1},{points:[31,32,33],color:1},{points:[33,34,31],color:1},{points:[33,27,34],color:1},{points:[26,31,34],color:1},{points:[16,17,25],color:1},{points:[25,17,24],color:1},{points:[34,9,8],color:1},{points:[9,34,27],color:1},{points:[10,9,27],color:1},{points:[35,10,27],color:1}];
+}
+function modifyModel(elevator, winglets)
+{
+   pointsArray[21].y = elevator / 10;
+   pointsArray[22].y = elevator / 10;
+   pointsArray[31].y = elevator / 10;
+   pointsArray[32].y = elevator / 10;
+   if(winglets == 1)
+   {
+      pointsArray[19].x = 65;
+      pointsArray[19].y = 10;
+      pointsArray[20].x = 65;
+      pointsArray[20].y = 10;
+      pointsArray[29].x = -65;
+      pointsArray[29].y = 10;
+      pointsArray[30].x = -65;
+      pointsArray[30].y = 10;
+   }
+   else
+   {
+      pointsArray[19].x = 75.5;
+      pointsArray[19].y = 0;
+      pointsArray[20].x = 79.5;
+      pointsArray[20].y = 0;
+      pointsArray[29].x = -75.5;
+      pointsArray[29].y = 0;
+      pointsArray[30].x = -79.5;
+      pointsArray[30].y = 0;
+   }
+}
+onInitObject();
+colorArray = [{back:4155525,front:14674411},{back:5208213,front:15727099}];
+onInitObject();
+rx = -0.24;
+ry = -0.48;
+rz = -3.1;
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_132\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_132\frame_10\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction.as ====
+mcButGo._accProps = new Object();
+mcButGo._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_10.as ====
+function clearErrors()
+{
+   mcerrorn._visible = false;
+   mcerror0._visible = false;
+   mcerror1._visible = false;
+   mcerror2._visible = false;
+   mcerror3._visible = false;
+   mcerror4._visible = false;
+   mcerror5._visible = false;
+}
+function initForm()
+{
+   if(_parent.myName != "" && _parent.myName != null)
+   {
+      txtYourName.text = _parent.myName;
+   }
+   if(_parent.myMail != "" && _parent.myMail != null)
+   {
+      txtYourEmail.text = _parent.myMail;
+   }
+   if(_parent.Challenger1 != "" && _parent.Challenger1 != null)
+   {
+      txtChallanger1.text = _parent.Challenger1;
+   }
+   if(_parent.Challenger2 != "" && _parent.Challenger2 != null)
+   {
+      txtChallanger2.text = _parent.Challenger2;
+   }
+   if(_parent.Challenger3 != "" && _parent.Challenger3 != null)
+   {
+      txtChallanger3.text = _parent.Challenger3;
+   }
+   if(_parent.Challenger4 != "" && _parent.Challenger4 != null)
+   {
+      txtChallanger4.text = _parent.Challenger4;
+   }
+   if(_parent.Challenger5 != "" && _parent.Challenger5 != null)
+   {
+      txtChallanger5.text = _parent.Challenger5;
+   }
+}
+function OnEnterChallenger(oldFocus)
+{
+   if(this.text == "CHALLENGER\'S EMAIL")
+   {
+      this.text = "";
+   }
+}
+function OnExitChallenger(newFocus)
+{
+   if(this.text == "")
+   {
+      this.text = "CHALLENGER\'S EMAIL";
+   }
+}
+function handleFormValidation()
+{
+   if(dataReceiver.result == 0)
+   {
+      if(_parent.OnSubmit != null)
+      {
+         _parent.OnSubmit();
+      }
+      _root.sfx_gui_slide.play();
+      _parent.play();
+   }
+   else
+   {
+      txtError.text = dataReceiver.errorCode;
+      if(dataReceiver.errorn == 1)
+      {
+         mcerrorn._visible = true;
+      }
+      if(dataReceiver.error0 == 1)
+      {
+         mcerror0._visible = true;
+      }
+      if(dataReceiver.error1 == 1)
+      {
+         mcerror1._visible = true;
+      }
+      if(dataReceiver.error2 == 1)
+      {
+         mcerror2._visible = true;
+      }
+      if(dataReceiver.error3 == 1)
+      {
+         mcerror3._visible = true;
+      }
+      if(dataReceiver.error4 == 1)
+      {
+         mcerror4._visible = true;
+      }
+      if(dataReceiver.error5 == 1)
+      {
+         mcerror5._visible = true;
+      }
+      butBlocker._visible = false;
+   }
+}
+var dataSender;
+var dataReceiver;
+butBlocker._visible = false;
+initForm();
+clearErrors();
+butCancel.onRelease = function()
+{
+   if(_parent.OnCancel != null)
+   {
+      _parent.OnCancel();
+   }
+};
+mcButGo.butGo.onRelease = function()
+{
+   mcerrorn._visible = false;
+   mcerror0._visible = false;
+   mcerror1._visible = false;
+   mcerror2._visible = false;
+   mcerror3._visible = false;
+   mcerror4._visible = false;
+   mcerror5._visible = false;
+   butBlocker._visible = true;
+   dataSender = new LoadVars();
+   dataReceiver = new LoadVars();
+   dataSender.myName = nameown;
+   dataSender.myEmail = emailown;
+   dataSender.challenged1 = email1;
+   dataSender.challenged2 = email2;
+   dataSender.challenged3 = email3;
+   dataSender.challenged4 = email4;
+   dataSender.challenged5 = email5;
+   dataReceiver.onLoad = handleFormValidation;
+   dataSender.sendAndLoad("ValidateForm.aspx",dataReceiver,"POST");
+};
+txtYourName.onSetFocus = function(oldFocus)
+{
+   if(txtYourName.text == "YOUR NAME")
+   {
+      txtYourName.text = "";
+   }
+};
+txtYourName.onKillFocus = function(newFocus)
+{
+   if(txtYourName.text == "")
+   {
+      txtYourName.text = "YOUR NAME";
+   }
+};
+txtYourEmail.onSetFocus = function(oldFocus)
+{
+   if(txtYourEmail.text == "YOUR EMAIL ADDRESS")
+   {
+      txtYourEmail.text = "";
+   }
+};
+txtYourEmail.onKillFocus = function(newFocus)
+{
+   if(txtYourEmail.text == "")
+   {
+      txtYourEmail.text = "YOUR EMAIL ADDRESS";
+   }
+};
+txtChallanger1.onSetFocus = OnEnterChallenger;
+txtChallanger2.onSetFocus = OnEnterChallenger;
+txtChallanger3.onSetFocus = OnEnterChallenger;
+txtChallanger4.onSetFocus = OnEnterChallenger;
+txtChallanger5.onSetFocus = OnEnterChallenger;
+txtChallanger1.onKillFocus = OnExitChallenger;
+txtChallanger2.onKillFocus = OnExitChallenger;
+txtChallanger3.onKillFocus = OnExitChallenger;
+txtChallanger4.onKillFocus = OnExitChallenger;
+txtChallanger5.onKillFocus = OnExitChallenger;
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_2.as ====
+mcerror0._accProps = new Object();
+mcerror0._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_3.as ====
+mcerror1._accProps = new Object();
+mcerror1._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_4.as ====
+mcerror2._accProps = new Object();
+mcerror2._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_5.as ====
+mcerror3._accProps = new Object();
+mcerror3._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_6.as ====
+mcerror4._accProps = new Object();
+mcerror4._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_7.as ====
+mcerror5._accProps = new Object();
+mcerror5._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_8.as ====
+mcerrorn._accProps = new Object();
+mcerrorn._accProps.silent = true;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_139\frame_1\DoAction_9.as ====
+mcButGo.tabIndex = 8;
+txtChallanger1.tabIndex = 3;
+txtChallanger2.tabIndex = 4;
+txtChallanger3.tabIndex = 5;
+txtChallanger4.tabIndex = 6;
+txtChallanger5.tabIndex = 7;
+txtYourName.tabIndex = 1;
+txtYourEmail.tabIndex = 2;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_140_mc_formchallenge\frame_1\DoAction.as ====
+var OnCancel;
+var OnSubmit;
+butBlocker._visible = false;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_140_mc_formchallenge\frame_12\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_140_mc_formchallenge\frame_33\DoAction.as ====
+this.removeMovieClip();
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_176\frame_1\DoAction.as ====
+var __goingLeft = false;
+var __currentPos = 0;
+var _scroll = false;
+onEnterFrame = function()
+{
+   if(_scroll)
+   {
+      if(txtLocal.maxhscroll > 0)
+      {
+         if(__goingLeft)
+         {
+            __currentPos -= 20;
+            txtLocal.hscroll = __currentPos;
+            if(__currentPos <= 0)
+            {
+               __goingLeft = false;
+               _scroll = false;
+            }
+         }
+         else
+         {
+            __currentPos += 20;
+            txtLocal.hscroll = __currentPos;
+            if(__currentPos >= txtLocal.maxhscroll)
+            {
+               __goingLeft = true;
+            }
+         }
+      }
+      else
+      {
+         _scroll = false;
+      }
+   }
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_189\frame_1\DoAction.as ====
+var __goingLeft = false;
+var __currentPos = 0;
+var _scroll = false;
+onEnterFrame = function()
+{
+   if(_scroll)
+   {
+      if(txtLocal.maxhscroll > 0)
+      {
+         if(__goingLeft)
+         {
+            __currentPos -= 20;
+            txtLocal.hscroll = __currentPos;
+            if(__currentPos <= 0)
+            {
+               __goingLeft = false;
+               _scroll = false;
+            }
+         }
+         else
+         {
+            __currentPos += 20;
+            txtLocal.hscroll = __currentPos;
+            if(__currentPos >= txtLocal.maxhscroll)
+            {
+               __goingLeft = true;
+            }
+         }
+      }
+      else
+      {
+         _scroll = false;
+      }
+   }
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_191\frame_1\DoAction.as ====
+var __goingLeft = false;
+var __currentPos = 0;
+var _scroll = false;
+onEnterFrame = function()
+{
+   if(_scroll)
+   {
+      if(txtLocal.maxhscroll > 0)
+      {
+         if(__goingLeft)
+         {
+            __currentPos -= 20;
+            txtLocal.hscroll = __currentPos;
+            if(__currentPos <= 0)
+            {
+               __goingLeft = false;
+               _scroll = false;
+            }
+         }
+         else
+         {
+            __currentPos += 20;
+            txtLocal.hscroll = __currentPos;
+            if(__currentPos >= txtLocal.maxhscroll)
+            {
+               __goingLeft = true;
+            }
+         }
+      }
+      else
+      {
+         _scroll = false;
+      }
+   }
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_192_mc_scoreboard\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_192_mc_scoreboard\frame_35\DoAction.as ====
+function startScroll()
+{
+   if(!mcVS1._scroll && !mcVS2._scroll && !mcVS3._scroll && !mcVS4._scroll && !mcVS5._scroll)
+   {
+      mcVS1._scroll = true;
+      mcVS2._scroll = true;
+      mcVS3._scroll = true;
+      mcVS4._scroll = true;
+      mcVS5._scroll = true;
+   }
+}
+txtChallenger.text = Name0.toUpperCase();
+mcVS1.txtLocal.text = Name1.toUpperCase();
+mcVS2.txtLocal.text = Name2.toUpperCase();
+mcVS3.txtLocal.text = Name3.toUpperCase();
+mcVS4.txtLocal.text = Name4.toUpperCase();
+mcVS5.txtLocal.text = Name5.toUpperCase();
+setInterval(this,"startScroll",2000);
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_192_mc_scoreboard\frame_46\DoAction.as ====
+txtLength.text = Len + " m";
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_192_mc_scoreboard\frame_55\DoAction.as ====
+function startScroll()
+{
+   mcWinner._scroll = true;
+   mcLooser._scroll = true;
+}
+mcWinner.txtLocal.text = Name1.toUpperCase();
+mcLooser.txtLocal.text = Name2.toUpperCase();
+txtLengthWinner.text = Len1;
+txtLengthLooser.text = Len2;
+setInterval(this,"startScroll",4000);
+stop();
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_195_mov_ArenaAllNight\frame_1\DoAction.as ====
+var acc = 0;
+var speedx = 0;
+var speedy = 0;
+var inair = false;
+var myzoom = 100;
+onEnterFrame = function()
+{
+   mcArena._xscale = myzoom;
+   mcArena._yscale = myzoom;
+   mcTrees._xscale = myzoom;
+   mcTrees._yscale = myzoom;
+   mcHouses._xscale = myzoom;
+   mcHouses._yscale = myzoom;
+   mcHouseAway._xscale = myzoom;
+   mcHouseAway._yscale = myzoom;
+   mcSun._xscale = myzoom;
+   mcSun._yscale = myzoom;
+   if(xpos > 1285 * myzoom / 100 - 360)
+   {
+      xpos = 1285 * myzoom / 100 - 360;
+   }
+   if(xpos < - (1285 * myzoom / 100 - 360))
+   {
+      xpos = - (1285 * myzoom / 100 - 360);
+   }
+   if(ypos > 713.5 * myzoom / 100 - 200)
+   {
+      ypos = 713.5 * myzoom / 100 - 200;
+   }
+   if(ypos < - (713.5 * myzoom / 100 - 200))
+   {
+      ypos = - (713.5 * myzoom / 100 - 200);
+   }
+   mcSun._x = xpos * 0.04 + 360;
+   mcSun._y = ypos * 0.04 + 200;
+   mcHouseAway._x = xpos * 0.7 + 360;
+   mcHouseAway._y = ypos * 0.7 + 200;
+   mcHouses._x = xpos * 0.8 + 360;
+   mcHouses._y = ypos * 0.8 + 200;
+   mcTrees._x = xpos * 0.9 + 360;
+   mcTrees._y = ypos * 0.9 + 200;
+   mcArena._x = xpos + 360;
+   mcArena._y = ypos + 200;
+};
+Stage.showMenu = false;
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_199_mc_try_again\frame_1\DoAction.as ====
+var onClick;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_199_mc_try_again\frame_26\DoAction.as ====
+butBox.onRelease = function()
+{
+   if(onClick != null)
+   {
+      onClick();
+   }
+   this.removeMovieClip();
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_199_mc_try_again\frame_61\DoAction.as ====
+gotoAndPlay(37);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_211_mov_info\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_220_mc_startold\frame_1\DoAction.as ====
+butStart.onRelease = function()
+{
+   if(_parent.onStart != null)
+   {
+      _parent.onStart();
+   }
+   _parent._parent.mcMinilogo.gotoAndPlay(2);
+   onEnterFrame = function()
+   {
+      var _loc2_ = _root.sfx_title.getVolume();
+      if(_loc2_ > 0)
+      {
+         _root.sfx_title.setVolume(_loc2_ - 10);
+      }
+   };
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_220_mc_startold\frame_94\DoAction.as ====
+gotoAndPlay(46);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_221\frame_1\DoAction.as ====
+_root.sfx_title.start(0,99);
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_221\frame_907\DoAction.as ====
+gotoAndPlay(25);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_222_mc_start\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_222_mc_start\frame_1\DoAction_2.as ====
+var onStart;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_226_mc_challenge_intro\frame_1\DoAction.as ====
+var onMovieEnd;
+var onStartZoom;
+var onEnterForm;
+var onLaunchSample;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_226_mc_challenge_intro\frame_52\DoAction.as ====
+if(onEnterForm != null)
+{
+   onEnterForm();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_226_mc_challenge_intro\frame_53\DoAction.as ====
+if(onLaunchSample != null)
+{
+   onLaunchSample();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_226_mc_challenge_intro\frame_61\DoAction.as ====
+if(onStartZoom != null)
+{
+   onStartZoom();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_226_mc_challenge_intro\frame_87\DoAction.as ====
+if(onMovieEnd != null)
+{
+   onMovieEnd();
+}
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_246_mov_ArenaDay\frame_1\DoAction.as ====
+var acc = 0;
+var speedx = 0;
+var speedy = 0;
+var inair = false;
+var myzoom = 100;
+onEnterFrame = function()
+{
+   mcArena._xscale = myzoom;
+   mcArena._yscale = myzoom;
+   mcTrees._xscale = myzoom;
+   mcTrees._yscale = myzoom;
+   mcHouses._xscale = myzoom;
+   mcHouses._yscale = myzoom;
+   mcHouseAway._xscale = myzoom;
+   mcHouseAway._yscale = myzoom;
+   mcSun._xscale = myzoom;
+   mcSun._yscale = myzoom;
+   if(xpos > 1285 * myzoom / 100 - 360)
+   {
+      xpos = 1285 * myzoom / 100 - 360;
+   }
+   if(xpos < - (1285 * myzoom / 100 - 360))
+   {
+      xpos = - (1285 * myzoom / 100 - 360);
+   }
+   if(ypos > 713.5 * myzoom / 100 - 200)
+   {
+      ypos = 713.5 * myzoom / 100 - 200;
+   }
+   if(ypos < - (713.5 * myzoom / 100 - 200))
+   {
+      ypos = - (713.5 * myzoom / 100 - 200);
+   }
+   mcSun._x = xpos * 0.04 + 360;
+   mcSun._y = ypos * 0.04 + 200;
+   mcHouseAway._x = xpos * 0.7 + 360;
+   mcHouseAway._y = ypos * 0.7 + 200;
+   mcHouses._x = xpos * 0.8 + 360;
+   mcHouses._y = ypos * 0.8 + 200;
+   mcTrees._x = xpos * 0.9 + 360;
+   mcTrees._y = ypos * 0.9 + 200;
+   mcArena._x = xpos + 360;
+   mcArena._y = ypos + 200;
+};
+Stage.showMenu = false;
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_26\frame_1\DoAction.as ====
+var fadecounter = 0;
+var fadedirection = false;
+var onLoaded;
+onEnterFrame = function()
+{
+   txtLoading._alpha = fadecounter;
+   if(fadedirection)
+   {
+      fadecounter -= 10;
+      if(fadecounter == 0)
+      {
+         fadedirection = false;
+      }
+   }
+   else
+   {
+      fadecounter += 10;
+      if(fadecounter == 100)
+      {
+         fadedirection = true;
+      }
+   }
+   var _loc2_ = _root.getBytesTotal();
+   var _loc3_ = _root.getBytesLoaded();
+   if(_loc3_ == _loc2_)
+   {
+      txtPercent.text = "100%";
+      mcLoadBar._width = 100;
+      onLoaded();
+   }
+   else
+   {
+      txtPercent.text = int(_loc3_ / _loc2_ * 100) + "%";
+      mcLoadBar._width = int(_loc3_ / _loc2_ * 100);
+   }
+};
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_311\frame_1\PlaceObject2_307_2\CLIPACTIONRECORD onClipEvent(load).as ====
+onClipEvent(load){
+   stop();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_311\frame_1\PlaceObject2_307_4\CLIPACTIONRECORD onClipEvent(load).as ====
+onClipEvent(load){
+   stop();
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_319\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_319\frame_33\DoAction.as ====
+gotoAndPlay(2);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_32\frame_1\DoAction.as ====
+_root.vol = 100;
+_root.sfx_gui_click.setVolume(100);
+_root.sfx_gui_slide.setVolume(100);
+_root.sfx_challenge_come.setVolume(100);
+_root.sfx_challenge_go_for_it.setVolume(100);
+_root.sfx_challenge_i_love.setVolume(100);
+_root.sfx_challenge_looser.setVolume(100);
+_root.sfx_challenge_publik_sorl_loop.setVolume(100);
+_root.sfx_challenge_publik_winner.setVolume(100);
+_root.sfx_challenge_show_what.setVolume(100);
+_root.sfx_challenge_speaker_heres_the_moment.setVolume(100);
+_root.sfx_challenge_speaker_wait_and_see.setVolume(100);
+_root.sfx_challenge_speaker_we_have_a_winner.setVolume(100);
+_root.sfx_challenge_speaker_welcome.setVolume(100);
+_root.sfx_title.setVolume(100);
+onPress = function()
+{
+   var _loc1_ = new LoadVars();
+   _loc1_.cmd = "off";
+   _loc1_.sendAndLoad("Sound.aspx",_loc1_,"GET");
+   gotoAndPlay(2);
+};
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_32\frame_2\DoAction.as ====
+_root.vol = 0;
+_root.sfx_gui_click.setVolume(0);
+_root.sfx_gui_slide.setVolume(0);
+_root.sfx_challenge_come.setVolume(0);
+_root.sfx_challenge_go_for_it.setVolume(0);
+_root.sfx_challenge_i_love.setVolume(0);
+_root.sfx_challenge_looser.setVolume(0);
+_root.sfx_challenge_publik_sorl_loop.setVolume(0);
+_root.sfx_challenge_publik_winner.setVolume(0);
+_root.sfx_challenge_show_what.setVolume(0);
+_root.sfx_challenge_speaker_heres_the_moment.setVolume(0);
+_root.sfx_challenge_speaker_wait_and_see.setVolume(0);
+_root.sfx_challenge_speaker_we_have_a_winner.setVolume(0);
+_root.sfx_challenge_speaker_welcome.setVolume(0);
+_root.sfx_title.setVolume(0);
+onPress = function()
+{
+   var _loc1_ = new LoadVars();
+   _loc1_.cmd = "on";
+   _loc1_.sendAndLoad("Sound.aspx",_loc1_,"GET");
+   gotoAndPlay(1);
+};
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_332\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_332\frame_30\DoAction.as ====
+gotoAndPlay(2);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_336\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_338_mc_config\frame_1\DoAction.as ====
+function initPlane(plane, target, xpos, ypos)
+{
+   if(target.planeD != null)
+   {
+      target.planeD.removeMovieClip();
+   }
+   target.attachMovie(plane,"planeD",target.getNextHighestDepth());
+   target.planeD._x = xpos;
+   target.planeD._y = ypos;
+}
+function setPlaneA()
+{
+   if(SelectedPlane != 1)
+   {
+      _root.sfx_gui_click.start();
+      initPlane("mc3DEagle",_parent.mcConfig,30,-45);
+      SelectedPlane = 1;
+      copyConfig();
+      _root.InitPlane(1);
+   }
+}
+function setPlaneB()
+{
+   if(SelectedPlane != 2)
+   {
+      _root.sfx_gui_click.start();
+      initPlane("mc3D_square",_parent.mcConfig,25,-30);
+      SelectedPlane = 2;
+      copyConfig();
+      _root.InitPlane(2);
+   }
+}
+function setPlaneC()
+{
+   if(SelectedPlane != 3)
+   {
+      _root.sfx_gui_click.start();
+      initPlane("mc3D_dart",_parent.mcConfig,50,-40);
+      SelectedPlane = 3;
+      copyConfig();
+      _root.InitPlane(3);
+   }
+}
+function copyConfig()
+{
+   mcSliderElevators.Value = configs[SelectedPlane - 1].elev;
+   mcSliderWinglets.Value = configs[SelectedPlane - 1].wing;
+   mcSliderWeight.Value = configs[SelectedPlane - 1].weight;
+   updatePlane = true;
+}
+function clearRadioButtons()
+{
+   radioPlaneA.Uncheck();
+   radioPlaneB.Uncheck();
+   radioPlaneC.Uncheck();
+}
+var configs = [{elev:0,weight:0,wing:0},{elev:0,weight:0,wing:0},{elev:0,weight:0,wing:0}];
+var SelectedPlane = 3;
+var updatePlane = false;
+initPlane("mc3D_dart",this,50,-40);
+butBlocker.useHandCursor = false;
+radioPlaneA.Callback = clearRadioButtons;
+radioPlaneB.Callback = clearRadioButtons;
+radioPlaneC.Callback = clearRadioButtons;
+radioPlaneA.OnClick = setPlaneA;
+radioPlaneB.OnClick = setPlaneB;
+radioPlaneC.OnClick = setPlaneC;
+butPlaneA.onPress = function()
+{
+   radioPlaneA.handlerPress();
+};
+butPlaneB.onPress = function()
+{
+   radioPlaneB.handlerPress();
+};
+butPlaneC.onPress = function()
+{
+   radioPlaneC.handlerPress();
+};
+if(varChallengeEmail == "<p align=\"left\"><font face=\"Eurostile_9pt_st\" size=\"9\" color=\"#ffffff\" letterSpacing=\"1.000000\" kerning=\"0\">email@</font></p>")
+{
+   txtChallengedBy._visible = false;
+   txtChallengeEmail._visible = false;
+}
+onEnterFrame = function()
+{
+   if(updatePlane)
+   {
+      planeD.modifyModel(mcSliderElevators.Value,mcSliderWinglets.Value);
+      updatePlane = false;
+   }
+};
+var mrot = false;
+var xpos = 0;
+var ypos = 0;
+planeD.onPress = function()
+{
+   mrot = true;
+   xpos = _xmouse;
+   ypos = _ymouse;
+};
+planeD.onMouseUp = function()
+{
+   mrot = false;
+};
+planeD.onMouseMove = function()
+{
+   if(mrot)
+   {
+      planeD.ry += (_xmouse - xpos) / 20 * 3.141592653589793 / 180;
+      planeD.rz += (_ymouse - ypos) / 20 * 3.141592653589793 / 180;
+   }
+};
+mcSliderElevators.OnChange = function(newval)
+{
+   if(configs[SelectedPlane - 1].elev == newval)
+   {
+      return undefined;
+   }
+   _root.sfx_gui_click.start();
+   planeD.modifyModel(newval,mcSliderWinglets.Value);
+   configs[SelectedPlane - 1].elev = newval;
+};
+mcSliderWinglets.OnChange = function(newval)
+{
+   if(configs[SelectedPlane - 1].wing == newval)
+   {
+      return undefined;
+   }
+   _root.sfx_gui_click.start();
+   planeD.modifyModel(mcSliderElevators.Value,newval);
+   configs[SelectedPlane - 1].wing = newval;
+   if(newval == 0)
+   {
+      mc_on._x = -323;
+      mc_off._x = -158;
+   }
+   else
+   {
+      mc_on._x = -158;
+      mc_off._x = -323;
+   }
+};
+mcSliderWeight.OnChange = function(newval)
+{
+   if(configs[SelectedPlane - 1].weight == newval)
+   {
+      return undefined;
+   }
+   _root.sfx_gui_click.start();
+   configs[SelectedPlane - 1].weight = newval;
+};
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_338_mc_config\frame_1\PlaceObject2_268_mc_radiobutton_19\CLIPACTIONRECORD on(construct).as ====
+on(construct){
+   checked = false;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_338_mc_config\frame_1\PlaceObject2_268_mc_radiobutton_20\CLIPACTIONRECORD on(construct).as ====
+on(construct){
+   checked = false;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_338_mc_config\frame_1\PlaceObject2_268_mc_radiobutton_21\CLIPACTIONRECORD on(construct).as ====
+on(construct){
+   checked = true;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_338_mc_config\frame_1\PlaceObject2_277_mc_slider_22\CLIPACTIONRECORD on(construct).as ====
+on(construct){
+   Max = 100;
+   Min = 0;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_338_mc_config\frame_1\PlaceObject2_277_mc_slider_23\CLIPACTIONRECORD on(construct).as ====
+on(construct){
+   Max = 100;
+   Min = 0;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_338_mc_config\frame_1\PlaceObject2_277_mc_slider_24\CLIPACTIONRECORD on(construct).as ====
+on(construct){
+   Max = 1;
+   Min = 0;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_339_mc_configurator\frame_1\DoAction.as ====
+var OnPractice;
+var OnChallenge;
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_339_mc_configurator\frame_10\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_339_mc_configurator\frame_20\DoAction.as ====
+gotoAndStop(1);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_339_mc_configurator\frame_30\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_339_mc_configurator\frame_51\DoAction.as ====
+gotoAndStop(10);
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_355\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_361_mc_too_hard\frame_11\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_394\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_394\frame_103\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_396_mc_player_hand\frame_1\DoAction.as ====
+function Aim(power, angle)
+{
+   var _loc1_ = undefined;
+   if(power < 5)
+   {
+      _loc1_ = 1;
+   }
+   else if(power < 2)
+   {
+      _loc1_ = 2;
+   }
+   else if(power < 3)
+   {
+      _loc1_ = 3;
+   }
+   else if(power < 4)
+   {
+      _loc1_ = 4;
+   }
+   else if(power < 5)
+   {
+      _loc1_ = 5;
+   }
+   else if(power < 6)
+   {
+      _loc1_ = 6;
+   }
+   else if(power < 7)
+   {
+      _loc1_ = 7;
+   }
+   else if(power < 8)
+   {
+      _loc1_ = 8;
+   }
+   else if(power < 9)
+   {
+      _loc1_ = 9;
+   }
+   else if(power < 10)
+   {
+      _loc1_ = 10;
+   }
+   else if(power < 11)
+   {
+      _loc1_ = 11;
+   }
+   else if(power < 12)
+   {
+      _loc1_ = 12;
+   }
+   else if(power < 13)
+   {
+      _loc1_ = 13;
+   }
+   else if(power < 14)
+   {
+      _loc1_ = 14;
+   }
+   else if(power < 15)
+   {
+      _loc1_ = 15;
+   }
+   else if(power < 16)
+   {
+      _loc1_ = 16;
+   }
+   else if(power < 17)
+   {
+      _loc1_ = 17;
+   }
+   else if(power < 18)
+   {
+      _loc1_ = 18;
+   }
+   else if(power < 19)
+   {
+      _loc1_ = 19;
+   }
+   else if(power < 20)
+   {
+      _loc1_ = 20;
+   }
+   else if(power < 21)
+   {
+      _loc1_ = 21;
+   }
+   else if(power < 22)
+   {
+      _loc1_ = 22;
+   }
+   else if(power < 23)
+   {
+      _loc1_ = 23;
+   }
+   else if(power < 24)
+   {
+      _loc1_ = 24;
+   }
+   else if(power < 25)
+   {
+      _loc1_ = 25;
+   }
+   else if(power < 26)
+   {
+      _loc1_ = 26;
+   }
+   else if(power < 27)
+   {
+      _loc1_ = 27;
+   }
+   else if(power < 28)
+   {
+      _loc1_ = 28;
+   }
+   else if(power < 29)
+   {
+      _loc1_ = 29;
+   }
+   else if(power < 30)
+   {
+      _loc1_ = 30;
+   }
+   else if(power < 31)
+   {
+      _loc1_ = 31;
+   }
+   else if(power < 32)
+   {
+      _loc1_ = 32;
+   }
+   else if(power < 33)
+   {
+      _loc1_ = 33;
+   }
+   else if(power < 34)
+   {
+      _loc1_ = 34;
+   }
+   else if(power < 35)
+   {
+      _loc1_ = 35;
+   }
+   else if(power < 36)
+   {
+      _loc1_ = 36;
+   }
+   else if(power < 37)
+   {
+      _loc1_ = 37;
+   }
+   else if(power < 38)
+   {
+      _loc1_ = 38;
+   }
+   else if(power < 39)
+   {
+      _loc1_ = 39;
+   }
+   else if(power < 40)
+   {
+      _loc1_ = 40;
+   }
+   else if(power < 41)
+   {
+      _loc1_ = 41;
+   }
+   else if(power < 42)
+   {
+      _loc1_ = 42;
+   }
+   else if(power < 43)
+   {
+      _loc1_ = 43;
+   }
+   else if(power < 44)
+   {
+      _loc1_ = 44;
+   }
+   else if(power < 45)
+   {
+      _loc1_ = 45;
+   }
+   else if(power < 46)
+   {
+      _loc1_ = 46;
+   }
+   else if(power < 47)
+   {
+      _loc1_ = 47;
+   }
+   else if(power < 48)
+   {
+      _loc1_ = 48;
+   }
+   else if(power < 49)
+   {
+      _loc1_ = 49;
+   }
+   else if(power < 50)
+   {
+      _loc1_ = 50;
+   }
+   else if(power < 51)
+   {
+      _loc1_ = 51;
+   }
+   else if(power < 52)
+   {
+      _loc1_ = 52;
+   }
+   else if(power < 53)
+   {
+      _loc1_ = 53;
+   }
+   else if(power < 54)
+   {
+      _loc1_ = 54;
+   }
+   else if(power < 55)
+   {
+      _loc1_ = 55;
+   }
+   else if(power < 56)
+   {
+      _loc1_ = 56;
+   }
+   else if(power < 57)
+   {
+      _loc1_ = 57;
+   }
+   else if(power < 58)
+   {
+      _loc1_ = 58;
+   }
+   else if(power < 59)
+   {
+      _loc1_ = 59;
+   }
+   else if(power < 60)
+   {
+      _loc1_ = 60;
+   }
+   else if(power < 61)
+   {
+      _loc1_ = 61;
+   }
+   else if(power < 62)
+   {
+      _loc1_ = 62;
+   }
+   else if(power < 63)
+   {
+      _loc1_ = 63;
+   }
+   else if(power < 64)
+   {
+      _loc1_ = 64;
+   }
+   else if(power < 65)
+   {
+      _loc1_ = 65;
+   }
+   else if(power < 66)
+   {
+      _loc1_ = 66;
+   }
+   else if(power < 67)
+   {
+      _loc1_ = 67;
+   }
+   else if(power < 68)
+   {
+      _loc1_ = 68;
+   }
+   else if(power < 69)
+   {
+      _loc1_ = 69;
+   }
+   else if(power < 70)
+   {
+      _loc1_ = 70;
+   }
+   else if(power < 71)
+   {
+      _loc1_ = 71;
+   }
+   else if(power < 72)
+   {
+      _loc1_ = 72;
+   }
+   else if(power < 73)
+   {
+      _loc1_ = 73;
+   }
+   else if(power < 74)
+   {
+      _loc1_ = 74;
+   }
+   else if(power < 75)
+   {
+      _loc1_ = 75;
+   }
+   else if(power < 76)
+   {
+      _loc1_ = 76;
+   }
+   else if(power < 77)
+   {
+      _loc1_ = 77;
+   }
+   else if(power < 78)
+   {
+      _loc1_ = 78;
+   }
+   else if(power < 79)
+   {
+      _loc1_ = 79;
+   }
+   else if(power < 80)
+   {
+      _loc1_ = 80;
+   }
+   else if(power < 81)
+   {
+      _loc1_ = 81;
+   }
+   else if(power < 82)
+   {
+      _loc1_ = 82;
+   }
+   else if(power < 83)
+   {
+      _loc1_ = 83;
+   }
+   else if(power < 84)
+   {
+      _loc1_ = 84;
+   }
+   else if(power < 85)
+   {
+      _loc1_ = 85;
+   }
+   else if(power < 86)
+   {
+      _loc1_ = 86;
+   }
+   else if(power < 87)
+   {
+      _loc1_ = 87;
+   }
+   else if(power < 88)
+   {
+      _loc1_ = 88;
+   }
+   else if(power < 90)
+   {
+      _loc1_ = 89;
+   }
+   else
+   {
+      _loc1_ = 1;
+   }
+   over.gubbe.gotoAndStop(_loc1_);
+   under.gubbe.gotoAndStop(_loc1_);
+   over._rotation = angle;
+}
+function Throw()
+{
+   over.gubbe.gotoAndPlay(95);
+   under.gubbe.gotoAndPlay(95);
+   over._rotation = 0;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_400_mc_cancel\frame_1\DoAction.as ====
+var OnCancel;
+butCancel.onPress = function()
+{
+   if(OnCancel != null)
+   {
+      OnCancel();
+   }
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_42\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_42\frame_20\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_43\frame_1\DoAction.as ====
+butSolidLink.onPress = function()
+{
+   _root.getURL("solidworks.asp","_blank");
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_47\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_47\frame_19\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_7_mc_bigbang\frame_1\DoAction.as ====
+var mcCanvas;
+var bmpCanvas;
+mcCanvas = this.createEmptyMovieClip("mcCanvas",this.getNextHighestDepth());
+bmpCanvas = new flash.display.BitmapData(Stage.width,Stage.height,true,0);
+mcCanvas.attachBitmap(bmpCanvas,this.getNextHighestDepth());
+this.attachMovie("mc_firework","mcFirework1",this.getNextHighestDepth());
+this.attachMovie("mc_firework","mcFirework2",this.getNextHighestDepth());
+this.attachMovie("mc_firework","mcFirework3",this.getNextHighestDepth());
+this.attachMovie("mc_firework","mcFirework4",this.getNextHighestDepth());
+this.attachMovie("mc_firework","mcFirework5",this.getNextHighestDepth());
+onEnterFrame = function()
+{
+   if(fireaway == true)
+   {
+      if(mcFirework1.timetolaunch == null)
+      {
+         mcFirework1.setData(mcCanvas,bmpCanvas,"gfx_firework",0,90);
+      }
+      if(mcFirework2.timetolaunch == null)
+      {
+         mcFirework2.setData(mcCanvas,bmpCanvas,"gfx_firework_blue",20,100);
+      }
+      if(mcFirework3.timetolaunch == null)
+      {
+         mcFirework3.setData(mcCanvas,bmpCanvas,"gfx_firework_green",42,105);
+      }
+      if(mcFirework4.timetolaunch == null)
+      {
+         mcFirework4.setData(mcCanvas,bmpCanvas,"gfx_firework_yellow",50,621);
+      }
+      if(mcFirework5.timetolaunch == null)
+      {
+         mcFirework5.setData(mcCanvas,bmpCanvas,"gfx_firework_purple",56,580);
+      }
+      bmpCanvas.fillRect(new flash.geom.Rectangle(0,0,bmpCanvas.width,bmpCanvas.height),0);
+      mcFirework1.drawParticles();
+      mcFirework2.drawParticles();
+      mcFirework3.drawParticles();
+      mcFirework4.drawParticles();
+      mcFirework5.drawParticles();
+   }
+};
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_8_mc_firework\frame_1\DoAction.as ====
+function setData(mc, bmp, fire, col, sx)
+{
+   timetolaunch = col;
+   startx = sx;
+   posx = startx;
+   mcCanvas = mc;
+   bmpCanvas = bmp;
+   bmpFirework = flash.display.BitmapData.loadBitmap(fire);
+   speedx = Math.random() * 2 - 1;
+   time = 105 + Math.floor(Math.random() * 10) - 5;
+}
+function drawParticles()
+{
+   if(timetolaunch > 0)
+   {
+      timetolaunch--;
+      return undefined;
+   }
+   if(pstate == 0)
+   {
+      bmpCanvas.copyPixels(bmpFirework,new flash.geom.Rectangle(85,16,16,16),new flash.geom.Point(posx,posy),bmpFirework,new flash.geom.Point(85,16),true);
+      posx += speedx;
+      posy += speedy;
+      speedy += 0.15;
+      time--;
+      if(time == 0)
+      {
+         particles = new Array();
+         var _loc3_ = undefined;
+         var _loc4_ = undefined;
+         var _loc1_ = 0;
+         while(_loc1_ < 100)
+         {
+            _loc4_ = Math.random() * 360 * 3.141592653589793 / 360;
+            _loc3_ = Math.random() * 8 - 4;
+            particles.push(makeParticle(posx,posy,Math.cos(_loc4_) * _loc3_,Math.sin(_loc4_) * _loc3_,50));
+            _loc1_ = _loc1_ + 1;
+         }
+         pstate = 1;
+         time = 50;
+      }
+   }
+   else if(pstate == 1)
+   {
+      var _loc5_ = 160 - Math.floor(time * 10 / 50) * 16;
+      _loc1_ = 0;
+      while(_loc1_ < 100)
+      {
+         var _loc2_ = Math.floor(Math.random() * 2) * 16;
+         bmpCanvas.copyPixels(bmpFirework,new flash.geom.Rectangle(_loc5_,_loc2_,16,16),new flash.geom.Point(particles[_loc1_].x,particles[_loc1_].y),bmpFirework,new flash.geom.Point(_loc5_,_loc2_),true);
+         particles[_loc1_].x += particles[_loc1_].speedx;
+         particles[_loc1_].y += particles[_loc1_].speedy;
+         _loc1_ = _loc1_ + 1;
+      }
+      time--;
+      if(time == 0)
+      {
+         pstate = 0;
+         posx = startx;
+         posy = 300;
+         speedy = -10;
+         speedx = Math.random() * 2 - 1;
+         time = 105 + Math.floor(Math.random() * 10) - 5;
+      }
+   }
+}
+function makeParticle(px, py, sx, sy, life)
+{
+   return {x:px,y:py,speedx:sx,speedy:sy,life:life};
+}
+var posx = 200;
+var posy = 300;
+var speedx = 2;
+var speedy = -10;
+var time = 105;
+var pstate = 0;
+var particles;
+var startx = 0;
+var timetolaunch;
+var mcCanvas;
+var bmpCanvas;
+var bmpFirework;
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_90\frame_1\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_90\frame_103\DoAction.as ====
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_94_mc_player\frame_1\DoAction.as ====
+function Aim(power, angle)
+{
+   var _loc1_ = undefined;
+   if(power < 5)
+   {
+      _loc1_ = 1;
+   }
+   else if(power < 2)
+   {
+      _loc1_ = 2;
+   }
+   else if(power < 3)
+   {
+      _loc1_ = 3;
+   }
+   else if(power < 4)
+   {
+      _loc1_ = 4;
+   }
+   else if(power < 5)
+   {
+      _loc1_ = 5;
+   }
+   else if(power < 6)
+   {
+      _loc1_ = 6;
+   }
+   else if(power < 7)
+   {
+      _loc1_ = 7;
+   }
+   else if(power < 8)
+   {
+      _loc1_ = 8;
+   }
+   else if(power < 9)
+   {
+      _loc1_ = 9;
+   }
+   else if(power < 10)
+   {
+      _loc1_ = 10;
+   }
+   else if(power < 11)
+   {
+      _loc1_ = 11;
+   }
+   else if(power < 12)
+   {
+      _loc1_ = 12;
+   }
+   else if(power < 13)
+   {
+      _loc1_ = 13;
+   }
+   else if(power < 14)
+   {
+      _loc1_ = 14;
+   }
+   else if(power < 15)
+   {
+      _loc1_ = 15;
+   }
+   else if(power < 16)
+   {
+      _loc1_ = 16;
+   }
+   else if(power < 17)
+   {
+      _loc1_ = 17;
+   }
+   else if(power < 18)
+   {
+      _loc1_ = 18;
+   }
+   else if(power < 19)
+   {
+      _loc1_ = 19;
+   }
+   else if(power < 20)
+   {
+      _loc1_ = 20;
+   }
+   else if(power < 21)
+   {
+      _loc1_ = 21;
+   }
+   else if(power < 22)
+   {
+      _loc1_ = 22;
+   }
+   else if(power < 23)
+   {
+      _loc1_ = 23;
+   }
+   else if(power < 24)
+   {
+      _loc1_ = 24;
+   }
+   else if(power < 25)
+   {
+      _loc1_ = 25;
+   }
+   else if(power < 26)
+   {
+      _loc1_ = 26;
+   }
+   else if(power < 27)
+   {
+      _loc1_ = 27;
+   }
+   else if(power < 28)
+   {
+      _loc1_ = 28;
+   }
+   else if(power < 29)
+   {
+      _loc1_ = 29;
+   }
+   else if(power < 30)
+   {
+      _loc1_ = 30;
+   }
+   else if(power < 31)
+   {
+      _loc1_ = 31;
+   }
+   else if(power < 32)
+   {
+      _loc1_ = 32;
+   }
+   else if(power < 33)
+   {
+      _loc1_ = 33;
+   }
+   else if(power < 34)
+   {
+      _loc1_ = 34;
+   }
+   else if(power < 35)
+   {
+      _loc1_ = 35;
+   }
+   else if(power < 36)
+   {
+      _loc1_ = 36;
+   }
+   else if(power < 37)
+   {
+      _loc1_ = 37;
+   }
+   else if(power < 38)
+   {
+      _loc1_ = 38;
+   }
+   else if(power < 39)
+   {
+      _loc1_ = 39;
+   }
+   else if(power < 40)
+   {
+      _loc1_ = 40;
+   }
+   else if(power < 41)
+   {
+      _loc1_ = 41;
+   }
+   else if(power < 42)
+   {
+      _loc1_ = 42;
+   }
+   else if(power < 43)
+   {
+      _loc1_ = 43;
+   }
+   else if(power < 44)
+   {
+      _loc1_ = 44;
+   }
+   else if(power < 45)
+   {
+      _loc1_ = 45;
+   }
+   else if(power < 46)
+   {
+      _loc1_ = 46;
+   }
+   else if(power < 47)
+   {
+      _loc1_ = 47;
+   }
+   else if(power < 48)
+   {
+      _loc1_ = 48;
+   }
+   else if(power < 49)
+   {
+      _loc1_ = 49;
+   }
+   else if(power < 50)
+   {
+      _loc1_ = 50;
+   }
+   else if(power < 51)
+   {
+      _loc1_ = 51;
+   }
+   else if(power < 52)
+   {
+      _loc1_ = 52;
+   }
+   else if(power < 53)
+   {
+      _loc1_ = 53;
+   }
+   else if(power < 54)
+   {
+      _loc1_ = 54;
+   }
+   else if(power < 55)
+   {
+      _loc1_ = 55;
+   }
+   else if(power < 56)
+   {
+      _loc1_ = 56;
+   }
+   else if(power < 57)
+   {
+      _loc1_ = 57;
+   }
+   else if(power < 58)
+   {
+      _loc1_ = 58;
+   }
+   else if(power < 59)
+   {
+      _loc1_ = 59;
+   }
+   else if(power < 60)
+   {
+      _loc1_ = 60;
+   }
+   else if(power < 61)
+   {
+      _loc1_ = 61;
+   }
+   else if(power < 62)
+   {
+      _loc1_ = 62;
+   }
+   else if(power < 63)
+   {
+      _loc1_ = 63;
+   }
+   else if(power < 64)
+   {
+      _loc1_ = 64;
+   }
+   else if(power < 65)
+   {
+      _loc1_ = 65;
+   }
+   else if(power < 66)
+   {
+      _loc1_ = 66;
+   }
+   else if(power < 67)
+   {
+      _loc1_ = 67;
+   }
+   else if(power < 68)
+   {
+      _loc1_ = 68;
+   }
+   else if(power < 69)
+   {
+      _loc1_ = 69;
+   }
+   else if(power < 70)
+   {
+      _loc1_ = 70;
+   }
+   else if(power < 71)
+   {
+      _loc1_ = 71;
+   }
+   else if(power < 72)
+   {
+      _loc1_ = 72;
+   }
+   else if(power < 73)
+   {
+      _loc1_ = 73;
+   }
+   else if(power < 74)
+   {
+      _loc1_ = 74;
+   }
+   else if(power < 75)
+   {
+      _loc1_ = 75;
+   }
+   else if(power < 76)
+   {
+      _loc1_ = 76;
+   }
+   else if(power < 77)
+   {
+      _loc1_ = 77;
+   }
+   else if(power < 78)
+   {
+      _loc1_ = 78;
+   }
+   else if(power < 79)
+   {
+      _loc1_ = 79;
+   }
+   else if(power < 80)
+   {
+      _loc1_ = 80;
+   }
+   else if(power < 81)
+   {
+      _loc1_ = 81;
+   }
+   else if(power < 82)
+   {
+      _loc1_ = 82;
+   }
+   else if(power < 83)
+   {
+      _loc1_ = 83;
+   }
+   else if(power < 84)
+   {
+      _loc1_ = 84;
+   }
+   else if(power < 85)
+   {
+      _loc1_ = 85;
+   }
+   else if(power < 86)
+   {
+      _loc1_ = 86;
+   }
+   else if(power < 87)
+   {
+      _loc1_ = 87;
+   }
+   else if(power < 88)
+   {
+      _loc1_ = 88;
+   }
+   else if(power < 90)
+   {
+      _loc1_ = 89;
+   }
+   else
+   {
+      _loc1_ = 1;
+   }
+   over.gubbe.gotoAndStop(_loc1_);
+   under.gubbe.gotoAndStop(_loc1_);
+   over._rotation = angle;
+}
+function Throw()
+{
+   over.gubbe.gotoAndPlay(95);
+   under.gubbe.gotoAndPlay(95);
+   over._rotation = 0;
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\DefineSprite_9_mc3D_square\frame_1\DoAction.as ====
+function onInitObject()
+{
+   pointsArray = [make3DPoint(2.932581,0.111765,-68.79139),make3DPoint(2.932581,0.111765,69.04139),make3DPoint(-0.046501,-12.36373,-68.29139),make3DPoint(-0.046501,-12.36373,69.54139),make3DPoint(-2.932581,0.111765,-68.79139),make3DPoint(-2.932581,0.111765,69.04139),make3DPoint(0.046501,-12.36373,-68.29139),make3DPoint(0.046501,-12.36373,69.54139),make3DPoint(-2.932581,0.111765,69.04139),make3DPoint(65.04956,0.111765,69.04139),make3DPoint(65.04956,0.111765,-68.79139),make3DPoint(2.932581,0.111765,-68.79139),make3DPoint(2.932581,0.111765,69.04139),make3DPoint(88.28683,0.083334,-68.875),make3DPoint(88.28683,0.083334,69.125),make3DPoint(53.2535,0,-68.60833),make3DPoint(12.12017,0,-68.74167),make3DPoint(17.12017,0,-58.875),make3DPoint(47.78684,0,-58.54167),make3DPoint(-65.04956,0.111765,69.04139),make3DPoint(-65.04956,0.111765,-68.79139),make3DPoint(-2.932581,0.111765,-68.79139),make3DPoint(-88.28683,0.083334,-68.875),make3DPoint(-88.28683,0.083334,69.125),make3DPoint(-53.2535,0,-68.60833),make3DPoint(-12.12017
+   ,0,-68.74167),make3DPoint(-17.12017,0,-58.875),make3DPoint(-47.78684,0,-58.54167),make3DPoint(-2.932581,0.111765,69.04139),make3DPoint(-49.58966,0.07451,10.5137)];
+   faceArray = [{points:[0,2,3],color:1},{points:[0,3,1],color:1},{points:[7,6,4],color:1},{points:[5,7,4],color:1},{points:[5,1,5],color:1},{points:[9,11,12],color:2},{points:[10,9,13],color:2},{points:[9,14,13],color:2},{points:[18,10,15],color:2},{points:[9,10,18],color:2},{points:[18,17,9],color:2},{points:[9,17,11],color:2},{points:[17,16,11],color:2},{points:[17,15,16],color:2},{points:[17,18,15],color:2},{points:[22,19,20],color:2},{points:[22,23,19],color:2},{points:[24,20,27],color:2},{points:[27,20,19],color:2},{points:[21,25,26],color:2},{points:[25,24,26],color:2},{points:[24,27,26],color:2},{points:[28,21,26],color:2},{points:[8,26,27],color:2},{points:[29,19,8],color:2},{points:[27,29,8],color:2},{points:[27,19,29],color:2}];
+}
+function modifyModel(elevator, winglets)
+{
+   pointsArray[15].y = elevator / 10 * __scale;
+   pointsArray[16].y = elevator / 10 * __scale;
+   pointsArray[24].y = elevator / 10 * __scale;
+   pointsArray[25].y = elevator / 10 * __scale;
+   if(winglets == 1)
+   {
+      pointsArray[13].x = 65 * __scale;
+      pointsArray[13].y = 23 * __scale;
+      pointsArray[14].x = 65 * __scale;
+      pointsArray[14].y = 23 * __scale;
+      pointsArray[22].x = -65 * __scale;
+      pointsArray[22].y = 23 * __scale;
+      pointsArray[23].x = -65 * __scale;
+      pointsArray[23].y = 23 * __scale;
+   }
+   else
+   {
+      pointsArray[13].x = 88 * __scale;
+      pointsArray[13].y = 0;
+      pointsArray[14].x = 88 * __scale;
+      pointsArray[14].y = 0;
+      pointsArray[22].x = -88 * __scale;
+      pointsArray[22].y = 0;
+      pointsArray[23].x = -88 * __scale;
+      pointsArray[23].y = 0;
+   }
+}
+onInitObject();
+colorArray = [{back:4155525,front:14674411},{back:4155525,front:14674411},{back:5208213,front:15727099}];
+SetScale(0.95);
+onInitObject();
+rx = -0.24;
+ry = -0.28;
+rz = -3.1;
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\frame_1\DoAction.as ====
+var demomode;
+var challengeID;
+var challengeEmail;
+var challReciever = new LoadVars();
+var nullReciever = new LoadVars();
+var challCheckup = false;
+if(jid != null && jid != "")
+{
+   var dataSender = new LoadVars();
+   dataSender.id = jid;
+   dataSender.email = jemail;
+   challReciever.onLoad = function()
+   {
+      if(challReciever.result == 0)
+      {
+         challengeID = jid;
+         challengeEmail = jemail;
+         demomode = challReciever.demomode;
+      }
+      challCheckup = true;
+   };
+   dataSender.sendAndLoad("LoadChallenge.aspx",challReciever,"POST");
+}
+else
+{
+   challCheckup = true;
+}
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\frame_1\DoAction_2.as ====
+var preloadDone = false;
+mcLoader.onLoaded = function()
+{
+   preloadDone = true;
+};
+this.onEnterFrame = function()
+{
+   if(challCheckup && preloadDone)
+   {
+      gotoAndPlay(3);
+   }
+};
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\frame_2\DoAction.as ====
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\frame_3\DoAction.as ====
+function goVisit(target_mc, obj)
+{
+   _root.getURL("careofhaus.asp","_blank");
+}
+function goVisit2(target_mc, obj)
+{
+   _root.getURL("solidworks.asp","_blank");
+}
+function setupConfig()
+{
+   if(challengeID != null)
+   {
+      vp.movieClip.mcConfig.mcConfig.txtInstructions.text = "Welcome to the Battle of the Air! Your friend seems to think he\'s an ace at flying. Now you have the chance to crash her confidence.\nDesign your plane at the left. Then practice (below) flying it. When you feel confident, accept the challenge and kick some ass. Just remember, you only get one shot in the competition. (You will see your buddyâ€™s attempt as a paper plane shadow.)\n\nKick some ass!\nFlight Commander";
+      vp.movieClip.mcConfig.mcConfig.varChallengeEmail = challReciever.dejaEmail.toLowerCase();
+   }
+   else
+   {
+      vp.movieClip.mcConfig.mcConfig.txtInstructions.text = "Design your plane, practice flying it and then when you feel confident challenge your buddies and kick some ass. Just remember, you only get one shot in the competition.\n\nBon Voyage.\nFlight Commander.";
+      vp.movieClip.mcConfig.mcConfig.txtChallengedBy._visible = false;
+      vp.movieClip.mcConfig.mcConfig.txtChallengeEmail._visible = false;
+   }
+}
+function clearIntroScreen()
+{
+   vp.movieClip.mcConfig.gotoAndPlay(42);
+   mcLogo.gotoAndPlay(2);
+   ival = setInterval(_root,"removeIntroScreen",1000);
+}
+function removeIntroScreen()
+{
+   clearInterval(ival);
+   vp.movieClip.mcStart.removeMovieClip();
+   stopAllSounds();
+   _root.sfx_title.setVolume(_root.vol);
+}
+function resetThrow()
+{
+   if(vp.movieClip.mcTryAgain != null)
+   {
+      vp.movieClip.mcTryAgain.removeMovieClip();
+   }
+   vp.movieClip.LayerDef_Arena.mcTooHard._visible = false;
+   dragX = 0;
+   dragY = 50;
+   aero1.planeangle = 0;
+   fly = false;
+   if(inchallenge)
+   {
+      vp.movieClip.LayerDef_Arena.obj_player_white.Aim(0,0);
+   }
+   vp.movieClip.LayerDef_Arena.obj_player.Aim(0,0);
+   vp.movieClip.LayerDef_Arena.obj_player_hand.Aim(0,0);
+   vp.movieClip.mcScore.txtLen.text = "0.0m";
+   vp.movieClip.mcScore.mcBar._y = 27;
+   vp.setCameraZoomTarget(100);
+}
+function grabPlane()
+{
+   if(demomode == 1)
+   {
+      return undefined;
+   }
+   if(!fly && !drag)
+   {
+      drag = true;
+      startdragX = _root._xmouse;
+      startdragY = _root._ymouse;
+      dragX = 0;
+      dragY = 50;
+   }
+}
+function movePlane()
+{
+   if(drag)
+   {
+      var _loc2_ = undefined;
+      dragX = startdragX - _root._xmouse;
+      dragY = startdragY - _root._ymouse;
+      if(dragX < 0)
+      {
+         dragX = 0;
+      }
+      radians = Math.atan(dragY / dragX);
+      if(isNaN(radians))
+      {
+         radians = 0;
+      }
+      degrees = (- radians * 180) / 3.141592653589793;
+      if(degrees < -60)
+      {
+         degrees = -60;
+         radians = (- degrees) / 180 * 3.141592653589793;
+      }
+      if(degrees > 60)
+      {
+         degrees = 60;
+         radians = (- degrees) / 180 * 3.141592653589793;
+      }
+      aero1.planeangle = degrees;
+      aero1.angle = degrees;
+      _loc2_ = Math.sqrt(dragX * dragX + dragY * dragY);
+      if(_loc2_ > 80)
+      {
+         _loc2_ = 80;
+      }
+      dragX = Math.cos(radians) * _loc2_ - Math.sin(radians) * 50;
+      dragY = Math.sin(radians) * _loc2_ + Math.cos(- radians) * 50;
+      if(inchallenge)
+      {
+         vp.movieClip.LayerDef_Arena.obj_player_white.Aim(_loc2_ * 89 / 80,- degrees);
+      }
+      vp.movieClip.LayerDef_Arena.obj_player.Aim(_loc2_ * 89 / 80,- degrees);
+      vp.movieClip.LayerDef_Arena.obj_player_hand.Aim(_loc2_ * 89 / 80,- degrees);
+      aero1.power = _loc2_ * 3.4;
+   }
+}
+function releasePlane()
+{
+   if(!fly && drag)
+   {
+      if(vp.movieClip.LayerDef_Arena.mcInfo)
+      {
+         vp.movieClip.LayerDef_Arena.mcInfo.removeMovieClip();
+      }
+      lastspeed = aero1.power;
+      lastangle = aero1.angle;
+      drag = false;
+      vp.movieClip.mcConfig.mcConfig.SelectedPlane;
+      aero1.setPlane(vp.movieClip.mcConfig.mcConfig.SelectedPlane);
+      aero1.element = vp.movieClip.mcConfig.mcConfig.mcSliderElevators.Value;
+      aero1.weight = 0.012 + vp.movieClip.mcConfig.mcConfig.mcSliderWeight.Value / 5000;
+      aero1.winglets = vp.movieClip.mcConfig.mcConfig.mcSliderWinglets.Value;
+      var _loc1_ = aero1.power - (200 + aero1.winglets * 10 + (aero1.weight - 0.012) * 1000);
+      mcBorder.txtDanger = "";
+      aero1.err = _loc1_;
+      if(_loc1_ > 0)
+      {
+         vp.movieClip.LayerDef_Arena.mcTooHard.gotoAndPlay(1);
+         vp.movieClip.LayerDef_Arena.mcTooHard._visible = true;
+         if(aero1.element > 5)
+         {
+            aero1.element = 100;
+         }
+         else
+         {
+            aero1.element = -200;
+         }
+         aero1.weight = 0.012;
+      }
+      aero1.init();
+      aero1.dx = - dragX;
+      aero1.dy = dragY;
+      if(inchallenge)
+      {
+         vp.movieClip.LayerDef_Arena.obj_player_white.Throw();
+      }
+      vp.movieClip.LayerDef_Arena.obj_player.Throw();
+      vp.movieClip.LayerDef_Arena.obj_player_hand.Throw();
+      inAir1 = true;
+      fly = true;
+      if(inchallenge)
+      {
+         clearInterval(ivalchallenge);
+         vp.movieClip.mcCancel.removeMovieClip();
+      }
+      if(challengeID != null && inchallenge)
+      {
+         aero2.angle = Number(challReciever.dejaAngle);
+         aero2.power = Number(challReciever.dejaPower);
+         aero2.element = Number(challReciever.dejaElevators);
+         aero2.weight = Number(challReciever.dejaWeight);
+         aero2.winglets = Number(challReciever.dejaWinglets);
+         aero2.setPlane(Number(challReciever.dejaPlane));
+         aero2.init();
+         aero2.dx = Number(challReciever.dejaOutX);
+         aero2.dy = Number(challReciever.dejaOutY);
+         vp.movieClip.LayerDef_Arena.ghostplane._visible = true;
+         inAir2 = true;
+         vp.movieClip.LayerDef_Arena.obj_cap._visible = true;
+      }
+      vp.setCameraZoomTarget(100);
+   }
+}
+function ShowForm()
+{
+   stopAllSounds();
+   Key.removeListener(keyListener);
+   vp.movieClip.mcChallengeIntro.stop();
+   vp.movieClip.attachMovie("mc_formchallenge","mcFormChallenge",vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcFormChallenge._x = 360;
+   vp.movieClip.mcFormChallenge._y = 200;
+   vp.movieClip.mcFormChallenge.myName = _root.challYourName.toUpperCase();
+   vp.movieClip.mcFormChallenge.myMail = _root.challYourEmail.toUpperCase();
+   vp.movieClip.mcFormChallenge.Challenger1 = _root.challChallenger1.toUpperCase();
+   vp.movieClip.mcFormChallenge.Challenger2 = _root.challChallenger2.toUpperCase();
+   vp.movieClip.mcFormChallenge.Challenger3 = _root.challChallenger3.toUpperCase();
+   vp.movieClip.mcFormChallenge.Challenger4 = _root.challChallenger4.toUpperCase();
+   vp.movieClip.mcFormChallenge.Challenger5 = _root.challChallenger5.toUpperCase();
+   vp.movieClip.mcConfig.swapDepths(vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcFormChallenge.OnCancel = CancelChallenge;
+   vp.movieClip.mcFormChallenge.OnSubmit = SubmitChallenge;
+}
+function GoChallenge()
+{
+   initArenaNighttime();
+   resetThrow();
+   if(vp.movieClip.mcCancel != null)
+   {
+      vp.movieClip.mcCancel.removeMovieClip();
+   }
+   vp.movieClip.attachMovie("mc_cancel","mcCancel",vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcCancel._x = 120;
+   vp.movieClip.mcCancel._y = 400;
+   vp.movieClip.mcCancel.OnCancel = function()
+   {
+      myInterval = setInterval(_root,"continueToPractise",1500);
+      vp.movieClip.mcConfig.gotoAndPlay(31);
+   };
+   vp.movieClip.mcScore.swapDepths(vp.movieClip.getNextHighestDepth());
+   if(vp.movieClip.mcChallengeIntro != null)
+   {
+      vp.movieClip.mcChallengeIntro.removeMovieClip();
+   }
+   vp.movieClip.attachMovie("mc_challenge_intro","mcChallengeIntro",vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcConfig.swapDepths(vp.movieClip.getNextHighestDepth());
+   if(challengeID == null)
+   {
+      vp.movieClip.mcChallengeIntro.onEnterForm = ShowForm;
+   }
+   if(challengeID == null)
+   {
+      vp.movieClip.mcChallengeIntro.onLaunchSample = _root.SpeakerWelcome;
+   }
+   else
+   {
+      vp.movieClip.mcChallengeIntro.onLaunchSample = function()
+      {
+         _root.sfx_challenge_speaker_heres_the_moment.start();
+      };
+   }
+   vp.movieClip.mcChallengeIntro.onStartZoom = StartChallenge;
+   vp.movieClip.mcChallengeIntro.onMovieEnd = RemoveIntro;
+   _root.sfx_challenge_intro.start();
+}
+function SpeakerWelcome()
+{
+   _root.sfx_challenge_speaker_welcome.start();
+}
+function ThrowPlanes()
+{
+   fly = true;
+   clearInterval(ivalthrow);
+   clearInterval(ivalchallenge);
+   aero1.angle = Number(challReciever.deja2Angle);
+   aero1.power = Number(challReciever.deja2Power);
+   aero1.element = Number(challReciever.deja2Elevators);
+   aero1.weight = Number(challReciever.deja2Weight);
+   aero1.winglets = Number(challReciever.deja2Winglets);
+   aero1.setPlane(Number(challReciever.deja2Plane));
+   aero1.init();
+   aero1.dx = Number(challReciever.deja2OutX);
+   aero1.dy = Number(challReciever.deja2OutY);
+   inAir1 = true;
+   aero2.angle = Number(challReciever.dejaAngle);
+   aero2.power = Number(challReciever.dejaPower);
+   aero2.element = Number(challReciever.dejaElevators);
+   aero2.weight = Number(challReciever.dejaWeight);
+   aero2.winglets = Number(challReciever.dejaWinglets);
+   aero2.setPlane(Number(challReciever.dejaPlane));
+   aero2.init();
+   aero2.dx = Number(challReciever.dejaOutX);
+   aero2.dy = Number(challReciever.dejaOutY);
+   inAir2 = true;
+   vp.movieClip.LayerDef_Arena.obj_cap._visible = true;
+   vp.movieClip.LayerDef_Arena.ghostplane._visible = true;
+   if(inchallenge)
+   {
+      vp.movieClip.LayerDef_Arena.obj_player_white.Throw();
+   }
+   vp.movieClip.LayerDef_Arena.obj_player.Throw();
+   vp.movieClip.LayerDef_Arena.obj_player_hand.Throw();
+   vp.setCameraZoomTarget(100);
+}
+function RemoveIntro()
+{
+   _root.sfx_challenge_publik_sorl_loop.start(0,999);
+   tauntcount = 0;
+   oneshot = false;
+   if(challengeID != null)
+   {
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name0 = challengeEmail;
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name1 = initEmail;
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name2 = "";
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name3 = "";
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name4 = "";
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name5 = "";
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.play();
+   }
+   ivalchallenge = setInterval(_root,"TauntPlayer",10000);
+   vp.movieClip.mcChallengeIntro.removeMovieClip();
+   if(demomode == 1)
+   {
+      PrepareThrowPlanes();
+   }
+}
+function PrepareThrowPlanes()
+{
+   ivalthrow = setInterval(_root,"ThrowPlanes",2000);
+}
+function StartChallenge()
+{
+   vp.setCameraZoom(80);
+   vp.setCameraZoomTarget(100);
+}
+function CancelChallenge()
+{
+   _root.sfx_challenge_publik_sorl_loop.stop();
+   vp.movieClip.mcConfig.swapDepths(vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcConfig.gotoAndPlay(31);
+   ival = setInterval(_root,"RemoveForm",1200);
+   clearInterval(ivalchallenge);
+}
+function SubmitChallenge()
+{
+   _root.challYourName = vp.movieClip.mcFormChallenge.popup.txtYourName.text;
+   _root.challYourEmail = vp.movieClip.mcFormChallenge.popup.txtYourEmail.text;
+   _root.challChallenger1 = vp.movieClip.mcFormChallenge.popup.txtChallanger1.text;
+   _root.challChallenger2 = vp.movieClip.mcFormChallenge.popup.txtChallanger2.text;
+   _root.challChallenger3 = vp.movieClip.mcFormChallenge.popup.txtChallanger3.text;
+   _root.challChallenger4 = vp.movieClip.mcFormChallenge.popup.txtChallanger4.text;
+   _root.challChallenger5 = vp.movieClip.mcFormChallenge.popup.txtChallanger5.text;
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.Name0 = _root.challYourEmail;
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.Name1 = _root.challChallenger1 != "CHALLENGER\'S EMAIL" ? _root.challChallenger1 : "";
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.Name2 = _root.challChallenger2 != "CHALLENGER\'S EMAIL" ? _root.challChallenger2 : "";
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.Name3 = _root.challChallenger3 != "CHALLENGER\'S EMAIL" ? _root.challChallenger3 : "";
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.Name4 = _root.challChallenger4 != "CHALLENGER\'S EMAIL" ? _root.challChallenger4 : "";
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.Name5 = _root.challChallenger5 != "CHALLENGER\'S EMAIL" ? _root.challChallenger5 : "";
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.play();
+   vp.movieClip.mcFormChallenge.swapDepths(vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcScore.swapDepths(vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcConfig.swapDepths(vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcChallengeIntro.play();
+   ival = setInterval(this,RemoveForm,1000);
+}
+function RemoveForm()
+{
+   clearInterval(ival);
+   vp.movieClip.mcFormChallenge.removeMovieClip();
+   initArenaDaytime();
+   resetThrow();
+   vp.movieClip.mcScore.swapDepths(vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcConfig.swapDepths(vp.movieClip.getNextHighestDepth());
+}
+function practiseLanding()
+{
+   vp.movieClip.attachMovie("mc_try_again","mcTryAgain",vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcTryAgain.onClick = function()
+   {
+      vp.movieClip.mcTryAgain.removeMovieClip();
+      resetThrow();
+   };
+}
+function challengeLanding()
+{
+   if(challengeID == null)
+   {
+      var _loc2_ = new LoadVars();
+      _loc2_.myName = challYourName;
+      _loc2_.myEmail = challYourEmail;
+      _loc2_.challenged1 = challChallenger1;
+      _loc2_.challenged2 = challChallenger2;
+      _loc2_.challenged3 = challChallenger3;
+      _loc2_.challenged4 = challChallenger4;
+      _loc2_.challenged5 = challChallenger5;
+      _loc2_.abc = lastspeed;
+      _loc2_.def = lastangle;
+      _loc2_.ghi = vp.movieClip.mcConfig.mcConfig.SelectedPlane;
+      _loc2_.jkl = aero1.element;
+      _loc2_.mno = aero1.weight;
+      _loc2_.pqr = aero1.winglets;
+      _loc2_.stu = aero1.x;
+      _loc2_.vwx = - dragX;
+      _loc2_.yz = dragY;
+      _loc2_.sendAndLoad("Challenge.aspx",_loc2_,"POST");
+      inAir1 = false;
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Len = CalcLength(aero1.x);
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.gotoAndPlay(46);
+      myInterval = setInterval(_root,"zoomBoard",2000);
+   }
+   else
+   {
+      inAir1 = false;
+      if(!inAir2)
+      {
+         CompleteChallenge();
+      }
+      else
+      {
+         vp.setCameraModeFollow(vp.movieClip.LayerDef_Arena.ghostplane);
+      }
+   }
+   if(CalcLength(aero1.x) < 5)
+   {
+      _root.sfx_challenge_looser.start();
+   }
+}
+function GhostLanding()
+{
+   inAir2 = false;
+   if(!inAir1)
+   {
+      CompleteChallenge();
+   }
+}
+function CompleteChallenge()
+{
+   if(demomode != 1)
+   {
+      var _loc2_ = new LoadVars();
+      _loc2_.myID = challengeID;
+      _loc2_.myEmail = challengeEmail;
+      _loc2_.abc = lastspeed;
+      _loc2_.def = lastangle;
+      _loc2_.ghi = vp.movieClip.mcConfig.mcConfig.SelectedPlane;
+      _loc2_.jkl = aero1.element;
+      _loc2_.mno = aero1.weight;
+      _loc2_.pqr = aero1.winglets;
+      _loc2_.stu = aero1.x;
+      _loc2_.vwx = - dragX;
+      _loc2_.yz = dragY;
+      _loc2_.sendAndLoad("CompleteChallenge.aspx",_loc2_,"POST");
+      _root.challYourEmail = challengeEmail;
+      _root.challChallenger1 = initEmail;
+   }
+   if(aero1.x > aero2.x)
+   {
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Len1 = CalcLength(aero1.x);
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Len2 = CalcLength(aero2.x);
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name1 = challengeEmail;
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name2 = initEmail;
+   }
+   else
+   {
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Len1 = CalcLength(aero2.x);
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Len2 = CalcLength(aero1.x);
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name1 = initEmail;
+      vp.movieClip.LayerDef_Arena.mcScoreBoard.Name2 = challengeEmail;
+   }
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.gotoAndPlay(55);
+   myInterval = setInterval(_root,"zoomBoard",2000);
+}
+function zoomBoard()
+{
+   clearInterval(myInterval);
+   vp.setCameraModeFollow(vp.movieClip.LayerDef_Arena.mcScoreBoard);
+   vp.setCameraZoomTarget(180);
+   if(challengeID == null)
+   {
+      _root.sfx_challenge_speaker_wait_and_see.start();
+   }
+   else
+   {
+      vp.movieClip.mcBigBang.fireaway = true;
+      _root.sfx_challenge_speaker_we_have_a_winner.start();
+      _root.sfx_challenge_publik_winner.start();
+   }
+   vp.movieClip.LayerDef_Arena.mcScoreBoard.butContinue.onPress = function()
+   {
+      myInterval = setInterval(_root,"continueToPractise",1500);
+      vp.movieClip.mcConfig.gotoAndPlay(31);
+   };
+   challengeID = null;
+   demomode = null;
+   _root.setupConfig();
+}
+function continueToPractise()
+{
+   clearInterval(myInterval);
+   _root.sfx_challenge_publik_sorl_loop.stop();
+   initArenaDaytime();
+   resetThrow();
+   vp.setCameraZoom(100);
+   vp.movieClip.mcScore.swapDepths(vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcConfig.swapDepths(vp.movieClip.getNextHighestDepth());
+}
+function initArenaDaytime()
+{
+   inchallenge = false;
+   vp.clearLayers();
+   vp.addLayer("LayerDef_Sky","LayerDef_Sky",0);
+   vp.addLayer("LayerDef_Sun","LayerDef_Sun",0.04);
+   vp.addLayer("LayerDef_HousesFarAway","LayerDef_HousesFarAway",0.7);
+   vp.addLayer("LayerDef_Houses","LayerDef_Houses",0.8);
+   vp.addLayer("LayerDef_Trees","LayerDef_Trees",0.9);
+   vp.addLayer("LayerDef_Arena","LayerDef_Arena",1);
+   aero1.onLanding = practiseLanding;
+   initArenaStandard();
+   vp.renderView();
+}
+function initArenaNighttime()
+{
+   inchallenge = true;
+   vp.clearLayers();
+   vp.addLayer("LayerDef_SkyNight","LayerDef_Sky",0);
+   vp.addLayer("LayerDef_SunNight","LayerDef_Sun",0.04);
+   vp.addLayer("LayerDef_HousesFarAwayNight","LayerDef_HousesFarAway",0.7);
+   vp.movieClip.attachMovie("mc_bigbang","mcBigBang",vp.movieClip.getNextHighestDepth());
+   vp.addLayer("LayerDef_HousesNight","LayerDef_Houses",0.8);
+   vp.addLayer("LayerDef_TreesNight","LayerDef_Trees",0.9);
+   vp.addLayer("LayerDef_ArenaNight","LayerDef_Arena",1);
+   if(challengeID != null)
+   {
+      vp.movieClip.LayerDef_Arena.addMovie(GetRightPlane(3),"ghostplane");
+      vp.movieClip.LayerDef_Arena.ghostplane._x = -1100;
+      vp.movieClip.LayerDef_Arena.ghostplane._y = 580;
+      vp.movieClip.LayerDef_Arena.ghostplane._visible = false;
+      vp.movieClip.LayerDef_Arena.ghostplane._alpha = 30;
+      vp.movieClip.LayerDef_Arena.addMovie("mc_smallcap","obj_cap");
+      vp.movieClip.LayerDef_Arena.obj_cap._x = -1100;
+      vp.movieClip.LayerDef_Arena.obj_cap._y = 600;
+      vp.movieClip.LayerDef_Arena.obj_cap._visible = false;
+      vp.movieClip.LayerDef_Arena.obj_cap.txtEmail.text = initEmail.toLowerCase();
+      vp.movieClip.LayerDef_Arena.obj_cap.txtEmail2.text = initEmail.toLowerCase();
+      aero2.onLanding = GhostLanding;
+   }
+   vp.movieClip.LayerDef_Arena.addMovie("mc_player","obj_player_white");
+   vp.movieClip.LayerDef_Arena.obj_player_white._x = -1099;
+   vp.movieClip.LayerDef_Arena.obj_player_white._y = 629;
+   Dmctransform = new flash.geom.Transform(vp.movieClip.LayerDef_Arena.obj_player_white);
+   cColorTransform = new flash.geom.ColorTransform(1,1,1,1,180,180,180,0);
+   Dmctransform.colorTransform = cColorTransform;
+   aero1.onLanding = challengeLanding;
+   initArenaStandard();
+}
+function InitPlane(planeType)
+{
+   if(vp.movieClip.LayerDef_Arena.obj_plane != null)
+   {
+      var _loc1_ = undefined;
+      _loc1_ = vp.movieClip.LayerDef_Arena.obj_plane.getDepth();
+      vp.movieClip.LayerDef_Arena.obj_plane.removeMovieClip();
+      vp.movieClip.LayerDef_Arena.attachMovie(GetRightPlane(planeType),"obj_plane",_loc1_);
+   }
+   else
+   {
+      vp.movieClip.LayerDef_Arena.addMovie(GetRightPlane(planeType),"obj_plane");
+   }
+   vp.movieClip.LayerDef_Arena.obj_plane._x = -1100;
+   vp.movieClip.LayerDef_Arena.obj_plane._y = 580;
+   vp.movieClip.LayerDef_Arena.obj_plane.onPress = grabPlane;
+   vp.movieClip.LayerDef_Arena.obj_plane.onMouseMove = movePlane;
+   vp.movieClip.LayerDef_Arena.obj_plane.onMouseUp = releasePlane;
+   vp.setCameraModeFollow(vp.movieClip.LayerDef_Arena.obj_plane);
+}
+function initArenaStandard()
+{
+   vp.setCameraBounds(1285,743.5);
+   vp.movieClip.LayerDef_Arena.addMovie("mcPlaneShadow","obj_shadow");
+   vp.movieClip.LayerDef_Arena.addMovie("mc_player","obj_player");
+   vp.movieClip.LayerDef_Arena.obj_player._x = -1100;
+   vp.movieClip.LayerDef_Arena.obj_player._y = 630;
+   InitPlane(aero1._plane);
+   vp.movieClip.LayerDef_Arena.addMovie("mc_player_hand","obj_player_hand");
+   vp.movieClip.LayerDef_Arena.obj_player_hand._x = -1100;
+   vp.movieClip.LayerDef_Arena.obj_player_hand._y = 630;
+   vp.movieClip.LayerDef_Arena.addMovie("mc_too_hard","mcTooHard");
+   vp.movieClip.LayerDef_Arena.mcTooHard._visible = false;
+   vp.movieClip.LayerDef_Arena.mcTooHard._x = -1085;
+   vp.movieClip.LayerDef_Arena.mcTooHard._y = 500;
+   vp.movieClip.LayerDef_Arena.obj_shadow._x = -1100;
+   vp.movieClip.LayerDef_Arena.obj_shadow._y = 570;
+}
+function TauntPlayer()
+{
+   tauntcount++;
+   if(tauntcount == 1)
+   {
+      _root.sfx_challenge_go_for_it.start();
+   }
+   if(tauntcount == 2)
+   {
+      _root.sfx_challenge_show_what.start();
+   }
+   if(tauntcount == 3)
+   {
+      _root.sfx_challenge_i_love.start();
+   }
+}
+function CalcLength(xpos)
+{
+   var _loc1_ = (xpos - 40) / 44.5;
+   if(_loc1_ < 0)
+   {
+      _loc1_ = 0;
+   }
+   _loc1_ = int(_loc1_) + "." + int(_loc1_ * 10 % 10);
+   return !isNaN(_loc1_) ? _loc1_ : "0.0";
+}
+function GetRightPlane(PlaneNr)
+{
+   if(PlaneNr == 1)
+   {
+      return "mc_plane_eagle";
+   }
+   if(PlaneNr == 2)
+   {
+      return "mc_plane_square";
+   }
+   if(PlaneNr == 3)
+   {
+      return "mc_plane_dart";
+   }
+   return "mc_plane_dart";
+}
+var menu_cm = new ContextMenu();
+menu_cm.customItems.push(new ContextMenuItem("Copyright 2007 SolidWorks Corp.  All rights reserved.",goVisit2));
+menu_cm.customItems.push(new ContextMenuItem("Developed by Care of Haus, Sweden",goVisit,true));
+menu_cm.hideBuiltInItems();
+_root.menu = menu_cm;
+var myzoom = 100;
+var inchallenge = false;
+var tauntcount = 0;
+var oneshot = false;
+var Dmctransform;
+var cColorTransform;
+var inAir1 = false;
+var inAir2 = false;
+var initEmail = challReciever.dejaEmail;
+var ivalchallenge;
+var ival;
+var aero1 = new kage.classes.aerodynamics();
+var aero2 = new kage.classes.aerodynamics();
+var fly = false;
+var dragX = 0;
+var dragY = 50;
+var startdragX = 0;
+var startdragY = 0;
+var drag = false;
+var degrees = 0;
+var radians = degrees / 180 * 3.141592653589793;
+var lastspeed = 0;
+var lastangle = 0;
+var challYourName;
+var challYourEmail;
+var challChallenger1;
+var challChallenger2;
+var challChallenger3;
+var challChallenger4;
+var challChallenger5;
+var sfx_gui_click = new Sound();
+var sfx_gui_slide = new Sound();
+var sfx_challenge_come = new Sound();
+var sfx_challenge_go_for_it = new Sound();
+var sfx_challenge_i_love = new Sound();
+var sfx_challenge_intro = new Sound();
+var sfx_challenge_looser = new Sound();
+var sfx_challenge_publik_sorl_loop = new Sound();
+var sfx_challenge_publik_winner = new Sound();
+var sfx_challenge_show_what = new Sound();
+var sfx_challenge_speaker_heres_the_moment = new Sound();
+var sfx_challenge_speaker_wait_and_see = new Sound();
+var sfx_challenge_speaker_we_have_a_winner = new Sound();
+var sfx_challenge_speaker_welcome = new Sound();
+var sfx_title = new Sound();
+sfx_gui_click.attachSound("gui_click.wav");
+sfx_gui_slide.attachSound("gui_slide.wav");
+sfx_challenge_come.attachSound("challenge_come.wav");
+sfx_challenge_go_for_it.attachSound("challenge_go_for_it.wav");
+sfx_challenge_i_love.attachSound("challenge_i_love.wav");
+sfx_challenge_intro.attachSound("challenge_intro.wav");
+sfx_challenge_looser.attachSound("challenge_looser.wav");
+sfx_challenge_publik_sorl_loop.attachSound("challenge_publik_sorl_loop.wav");
+sfx_challenge_publik_winner.attachSound("challenge_publik_winner.wav");
+sfx_challenge_show_what.attachSound("challenge_show_what.wav");
+sfx_challenge_speaker_heres_the_moment.attachSound("challenge_speaker_heres_the_moment.wav");
+sfx_challenge_speaker_wait_and_see.attachSound("challenge_speaker_wait_and_see.wav");
+sfx_challenge_speaker_we_have_a_winner.attachSound("challenge_speaker_we_have_a_winner.wav");
+sfx_challenge_speaker_welcome.attachSound("challenge_speaker_welcome.wav");
+sfx_title.attachSound("sfx_prelude");
+if(SoundCmd == "off")
+{
+   mcBorder.mcSound.gotoAndPlay(2);
+}
+var vp = new kage.classes.viewport(700,410,10,22);
+mcBorder.swapDepths(1000);
+mcLogo.swapDepths(1001);
+initArenaDaytime();
+vp.movieClip.LayerDef_Arena.addMovie("mov_info","mcInfo");
+vp.movieClip.LayerDef_Arena.mcInfo._x = -1200;
+vp.movieClip.LayerDef_Arena.mcInfo._y = 450;
+aero1.dx = 0;
+aero1.dy = 60;
+aero1.init();
+vp.movieClip.attachMovie("mc_score","mcScore",vp.movieClip.getNextHighestDepth());
+vp.movieClip.mcScore._x = 590;
+vp.movieClip.mcScore._y = 345;
+if(challengeID != null && demomode == 1)
+{
+   GoChallenge();
+}
+else
+{
+   vp.movieClip.attachMovie("mc_start","mcStart",vp.movieClip.getNextHighestDepth());
+   vp.movieClip.mcStart.onStart = clearIntroScreen;
+   if(challengeID != null)
+   {
+      vp.movieClip.mcStart.mcStart.varStartText = "YOU HAVE BEEN CHALLENGED BY " + challReciever.dejaName.toUpperCase() + ". DESIGN A PLANE, PRACTICE YOUR SKILLS, AND TAKE OFF TO THE BATTLE OF THE AIR!";
+   }
+}
+vp.movieClip.attachMovie("mc_configurator","mcConfig",vp.movieClip.getNextHighestDepth());
+vp.movieClip.mcConfig._x = 700;
+vp.movieClip.mcConfig._y = 391;
+vp.movieClip.mcConfig.OnChallenge = GoChallenge;
+vp.movieClip.mcConfig.OnPractice = resetThrow;
+vp.movieClip.mcConfig.gotoAndStop(30);
+setupConfig();
+onEnterFrame = function()
+{
+   if(fly)
+   {
+      aero1.fly();
+      vp.movieClip.LayerDef_Arena.obj_plane._x = -1100 + aero1.x;
+      vp.movieClip.LayerDef_Arena.obj_plane._y = 630 - aero1.y;
+      vp.movieClip.mcScore.txtLen.text = CalcLength(aero1.x) + "M";
+      vp.movieClip.mcScore.mcBar._y = 27 - aero1.y / 20;
+      if(inchallenge)
+      {
+         if(CalcLength(aero1.x) > 20 && !oneshot)
+         {
+            oneshot = true;
+            _root.sfx_challenge_come.start();
+         }
+      }
+      if(challengeID != null && inchallenge)
+      {
+         aero2.fly();
+         vp.movieClip.LayerDef_Arena.ghostplane._x = -1100 + aero2.x;
+         vp.movieClip.LayerDef_Arena.ghostplane._y = 630 - aero2.y;
+         degrees = - aero2.planeangle;
+         vp.movieClip.LayerDef_Arena.ghostplane._rotation = degrees;
+         vp.movieClip.LayerDef_Arena.obj_cap._x = -1100 + aero2.x;
+         vp.movieClip.LayerDef_Arena.obj_cap._y = 600 - aero2.y;
+      }
+   }
+   else
+   {
+      vp.movieClip.LayerDef_Arena.obj_plane._x = -1100 - dragX;
+      vp.movieClip.LayerDef_Arena.obj_plane._y = 630 - dragY;
+   }
+   degrees = - aero1.planeangle;
+   vp.movieClip.LayerDef_Arena.obj_plane._rotation = degrees;
+   var _loc2_ = (- (- vp.movieClip.LayerDef_Arena.obj_plane._y + 570) + 120) / 2;
+   if(_loc2_ < 0)
+   {
+      _loc2_ = 0;
+   }
+   vp.movieClip.LayerDef_Arena.obj_shadow._alpha = _loc2_;
+   vp.movieClip.LayerDef_Arena.obj_shadow._x = vp.movieClip.LayerDef_Arena.obj_plane._x;
+   vp.movieClip.LayerDef_Arena.obj_shadow._y = 690;
+   vp.renderView();
+};
+var ivalthrow;
+var myInterval;
+var easter = " ";
+keyListener = new Object();
+keyListener.onKeyDown = function()
+{
+   easter += String.fromCharCode(Key.getAscii());
+   if(easter.length > 20)
+   {
+      easter = easter.substr(easter.length - 20,20);
+   }
+   if(easter.length > 6 && easter.substr(easter.length - 7,7) == "fredrik")
+   {
+      mcBorder.mcEaster.gotoAndPlay(2);
+   }
+   if(easter.length > 5 && easter.substr(easter.length - 6,6) == "daniel")
+   {
+      mcBorder.mcEaster.gotoAndPlay(2);
+   }
+   if(easter.length > 6 && easter.substr(easter.length - 7,7) == "andreas")
+   {
+      mcBorder.mcEaster.gotoAndPlay(2);
+   }
+   if(easter.length > 5 && easter.substr(easter.length - 6,6) == "tobias")
+   {
+      mcBorder.mcEaster.gotoAndPlay(2);
+   }
+};
+Key.addListener(keyListener);
+stop();
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\ArenaDay.as ====
+class ArenaDay extends MovieClip
+{
+   var xpos = 1000;
+   var ypos = -827;
+   var myzoom = 100;
+   function ArenaDay()
+   {
+      super();
+   }
+   function SetPos(newx, newy)
+   {
+      if(newx > 1285 * this.myzoom / 100 - 360)
+      {
+         newx = 1285 * this.myzoom / 100 - 360;
+      }
+      if(newx < - (1285 * this.myzoom / 100 - 360))
+      {
+         newx = - (1285 * this.myzoom / 100 - 360);
+      }
+      if(newy > 713.5 * this.myzoom / 100 - 200)
+      {
+         newy = 713.5 * this.myzoom / 100 - 200;
+      }
+      if(newy < - (713.5 * this.myzoom / 100 - 200))
+      {
+         newy = - (713.5 * this.myzoom / 100 - 200);
+      }
+      this.xpos = newx;
+      this.ypos = newy;
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\aerodynamics.as ====
+class kage.classes.aerodynamics
+{
+   var cl;
+   var cd;
+   var y;
+   var oldangle;
+   var planeangle;
+   var dy;
+   var v;
+   var q;
+   var lift;
+   var drag;
+   var x;
+   var difangle;
+   var onLanding;
+   var x2;
+   var y2;
+   var planeA = {cd0:0.025,ar:1,area:0.1736,clmax:0.92};
+   var planeB = {cd0:0.03,ar:1.825,area:0.2028,clmax:0.55};
+   var planeC = {cd0:0.03,ar:0.85,area:0.2049,clmax:0.5};
+   var ar = 1.825;
+   var cd0 = 0.03;
+   var area = 0.208;
+   var weight = 0.012;
+   var dt = 0.025;
+   var clmax = 0.55;
+   var err = 0;
+   var g = 32.2;
+   var _plane = 3;
+   var element = 5;
+   var power = 35;
+   var angle = 0;
+   var winglets = 0;
+   var dx = 0;
+   function aerodynamics()
+   {
+      this.init();
+   }
+   function setPlane(plane)
+   {
+      var _loc2_ = undefined;
+      if(plane == 1)
+      {
+         _loc2_ = this.planeA;
+      }
+      else if(plane == 2)
+      {
+         _loc2_ = this.planeB;
+      }
+      else
+      {
+         _loc2_ = this.planeC;
+      }
+      this._plane = plane;
+      this.cd0 = _loc2_.cd0;
+      this.ar = _loc2_.ar;
+      this.area = _loc2_.area;
+      this.clmax = _loc2_.clmax;
+   }
+   function init()
+   {
+      this.cl = this.clmax * (this.element / 1600);
+      this.cd = this.cd0 + this.cl * this.cl / (2.2 * this.ar);
+      this.y = 1;
+      this.oldangle = this.angle;
+      this.planeangle = this.angle;
+      this.dy = 60;
+      this.v = this.power;
+   }
+   function fly()
+   {
+      if(this.y <= -50)
+      {
+         return undefined;
+      }
+      this.q = 0.00115 * this.v * this.v;
+      this.lift = this.q * (this.area - this.winglets * 0.01) * this.cl;
+      this.drag = this.q * (this.area - this.winglets * 0.01) * this.cd;
+      this.v -= (this.weight * Math.sin(this.angle / 57.29577951308232) + this.drag) * this.g * this.dt * 57.29577951308232;
+      this.angle += (this.lift - this.weight * Math.cos(this.angle / 57.29577951308232)) * this.g * this.dt * 57.29577951308232 / (this.weight * this.v);
+      if(this.v < 0)
+      {
+         this.v = - this.v;
+         this.angle = - this.angle;
+      }
+      this.angle %= 360;
+      this.dx += this.v * this.dt * Math.cos(this.angle / 57.29577951308232) * 10;
+      this.dy += this.v * this.dt * Math.sin(this.angle / 57.29577951308232) * 10;
+      this.x = Math.round(this.dx);
+      this.y = Math.round(this.dy);
+      if(this.angle != this.planeangle)
+      {
+         this.difangle = (this.angle - this.planeangle) % 360;
+         if(Math.abs(this.difangle) > 180)
+         {
+            this.difangle = (Math.abs(this.difangle) - 360) * (this.difangle / Math.abs(this.difangle));
+         }
+         this.difangle %= 360;
+         this.planeangle += this.difangle * this.v / 180;
+      }
+      if(this.y <= -50)
+      {
+         this.y = -50;
+         if(this.onLanding != null)
+         {
+            this.onLanding();
+         }
+      }
+      this.x2 = 200;
+      this.y2 = 300 - this.y;
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\common.as ====
+class kage.classes.common
+{
+   function common()
+   {
+   }
+   static function drawRect(mcTarget, x1, y1, x2, y2, color, alpha)
+   {
+      mcTarget.beginFill(color,alpha);
+      mcTarget.moveTo(x1,y1);
+      mcTarget.lineTo(x2,y1);
+      mcTarget.lineTo(x2,y2);
+      mcTarget.lineTo(x1,y2);
+      mcTarget.lineTo(x1,y1);
+      mcTarget.endFill();
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\GradientPoint.as ====
+class kage.classes.GradientPoint extends flash.geom.Point
+{
+   var ratio = 0;
+   var color = 0;
+   function GradientPoint(px, py, pratio, pcolor)
+   {
+      super();
+      this.color = pcolor;
+      this.ratio = pratio;
+      this.x = px;
+      this.y = py;
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\kage3d.as ====
+class kage.classes.kage3d extends MovieClip
+{
+   var onEnterFrame;
+   var __targetmc;
+   var pointsArray;
+   var sortArray;
+   var faceArray;
+   var colorArray;
+   var focalLength = 300;
+   var __scale = 1;
+   var rx = 0;
+   var ry = 0;
+   var rz = 0;
+   var anglez = 0;
+   var gz = 0;
+   function kage3d()
+   {
+      super();
+      this.onEnterFrame = function()
+      {
+         this.drawObject(this,Math.sin(this.anglez * 3.141592653589793 / 180) * 0.1);
+         this.anglez += 3;
+      };
+   }
+   function initMe()
+   {
+   }
+   function make3DPointX(sz, sx, sy)
+   {
+      return {x:sx,y:sy,z:sz};
+   }
+   function SetScale(scale)
+   {
+      this.__scale = scale;
+   }
+   function make3DPoint(sx, sy, sz)
+   {
+      return {x:sx * this.__scale,y:sy * this.__scale,z:sz * this.__scale};
+   }
+   function drawObject(tc, rotz)
+   {
+      this.__targetmc = tc;
+      var _loc4_ = this.Transform3DPointsTo2DPoints(this.pointsArray,{x:this.rx,y:this.ry + rotz,z:this.rz + rotz * 0.5});
+      this.__targetmc.clear();
+      this.__targetmc.lineStyle(0,0,0);
+      this.sortArray = new Array(0);
+      var _loc3_ = 0;
+      while(_loc3_ < this.faceArray.length)
+      {
+         this.sortArray.push({pos:_loc3_,z:(_loc4_[this.faceArray[_loc3_].points[0]].z + _loc4_[this.faceArray[_loc3_].points[1]].z + _loc4_[this.faceArray[_loc3_].points[2]].z) / 3});
+         _loc3_ = _loc3_ + 1;
+      }
+      this.sortArray.sortOn("z",Array.NUMERIC);
+      var _loc5_ = 0;
+      while(_loc5_ < this.faceArray.length)
+      {
+         _loc3_ = this.sortArray[_loc5_].pos;
+         var _loc2_ = new Array();
+         _loc2_.push(_loc4_[this.faceArray[_loc3_].points[0]]);
+         _loc2_.push(_loc4_[this.faceArray[_loc3_].points[1]]);
+         _loc2_.push(_loc4_[this.faceArray[_loc3_].points[2]]);
+         _loc2_.sortOn("z",Array.NUMERIC);
+         this.drawGradientTriangle(new kage.classes.GradientPoint(_loc2_[0].x,_loc2_[0].y,0,this.createColor(this.colorArray[this.faceArray[_loc3_].color].back,this.colorArray[this.faceArray[_loc3_].color].front,_loc2_[0].z / 3 + 50)),new kage.classes.GradientPoint(_loc2_[1].x,_loc2_[1].y,100 * (_loc2_[1].z - _loc2_[0].z) / (_loc2_[2].z - _loc2_[0].z),0),new kage.classes.GradientPoint(_loc2_[2].x,_loc2_[2].y,100,this.createColor(this.colorArray[this.faceArray[_loc3_].color].back,this.colorArray[this.faceArray[_loc3_].color].front,_loc2_[2].z / 3 + 50)));
+         _loc5_ = _loc5_ + 1;
+      }
+   }
+   function createColor(rgbDark, rgbLight, scale)
+   {
+      if(scale > 100)
+      {
+         scale = 100;
+      }
+      if(scale < 0)
+      {
+         scale = 0;
+      }
+      var _loc3_ = rgbDark >> 16;
+      var _loc4_ = rgbDark >> 8 & 0xFF;
+      var _loc2_ = rgbDark & 0xFF;
+      var _loc8_ = rgbLight >> 16;
+      var _loc10_ = rgbLight >> 8 & 0xFF;
+      var _loc9_ = rgbLight & 0xFF;
+      _loc3_ += Math.round((_loc8_ - _loc3_) * scale / 100);
+      _loc4_ += Math.round((_loc10_ - _loc4_) * scale / 100);
+      _loc2_ += Math.round((_loc9_ - _loc2_) * scale / 100);
+      var _loc5_ = (_loc3_ << 16) + (_loc4_ << 8) + _loc2_;
+      return _loc5_;
+   }
+   function Transform3DPointsTo2DPoints(points, axisRotations)
+   {
+      var _loc20_ = [];
+      var _loc15_ = Math.sin(axisRotations.x);
+      var _loc17_ = Math.cos(axisRotations.x);
+      var _loc13_ = Math.sin(axisRotations.y);
+      var _loc16_ = Math.cos(axisRotations.y);
+      var _loc12_ = Math.sin(axisRotations.z);
+      var _loc14_ = Math.cos(axisRotations.z);
+      var _loc5_ = undefined;
+      var _loc4_ = undefined;
+      var _loc3_ = undefined;
+      var _loc10_ = undefined;
+      var _loc9_ = undefined;
+      var _loc11_ = undefined;
+      var _loc8_ = undefined;
+      var _loc19_ = undefined;
+      var _loc18_ = undefined;
+      var _loc6_ = undefined;
+      var _loc2_ = points.length;
+      while(_loc2_--)
+      {
+         _loc5_ = points[_loc2_].x;
+         _loc4_ = points[_loc2_].y;
+         _loc3_ = points[_loc2_].z;
+         _loc10_ = _loc17_ * _loc4_ - _loc15_ * _loc3_;
+         _loc9_ = _loc15_ * _loc4_ + _loc17_ * _loc3_;
+         _loc8_ = _loc16_ * _loc9_ - _loc13_ * _loc5_;
+         _loc11_ = _loc13_ * _loc9_ + _loc16_ * _loc5_;
+         _loc19_ = _loc14_ * _loc11_ - _loc12_ * _loc10_;
+         _loc18_ = _loc12_ * _loc11_ + _loc14_ * _loc10_;
+         _loc6_ = this.focalLength / (this.focalLength + _loc8_) + 0.6;
+         _loc5_ = _loc19_ * _loc6_;
+         _loc4_ = _loc18_ * _loc6_;
+         _loc3_ = - _loc8_;
+         _loc20_[_loc2_] = this.make3DPoint(_loc5_,_loc4_,_loc3_);
+      }
+      return _loc20_;
+   }
+   function getHeight(x1, y1, x2, y2, x3, y3)
+   {
+      var _loc3_ = Math.sqrt(Math.pow(Math.abs(x2 - x1),2) + Math.pow(Math.abs(y2 - y1),2));
+      var _loc2_ = Math.sqrt(Math.pow(Math.abs(x3 - x2),2) + Math.pow(Math.abs(y3 - y2),2));
+      var _loc1_ = Math.sqrt(Math.pow(Math.abs(x1 - x3),2) + Math.pow(Math.abs(y1 - y3),2));
+      var _loc4_ = 2 * Math.sqrt((_loc3_ + _loc2_ + _loc1_) / 2 * ((_loc3_ + _loc2_ + _loc1_) / 2 - _loc3_) * ((_loc3_ + _loc2_ + _loc1_) / 2 - _loc2_) * ((_loc3_ + _loc2_ + _loc1_) / 2 - _loc1_)) / _loc1_;
+      if(isNaN(_loc4_))
+      {
+         _loc4_ = 0;
+      }
+      return _loc4_;
+   }
+   function drawGradientTriangle(gp0, gp1, gp2)
+   {
+      var _loc2_ = [gp0,gp1,gp2];
+      _loc2_.sortOn("ratio",Array.NUMERIC);
+      var _loc6_ = flash.geom.Point.interpolate(_loc2_[2],_loc2_[0],(_loc2_[1].ratio - _loc2_[0].ratio) / (_loc2_[2].ratio - _loc2_[0].ratio));
+      var _loc4_ = _loc2_[2].subtract(_loc2_[0]);
+      var _loc5_ = Math.atan2(_loc6_.x - _loc2_[1].x,_loc2_[1].y - _loc6_.y);
+      var _loc3_ = new flash.geom.Matrix();
+      _loc3_.a = Math.cos(Math.atan2(_loc4_.y,_loc4_.x) - _loc5_) * _loc4_.length / 1638.4;
+      _loc3_.rotate(_loc5_);
+      _loc3_.translate((_loc2_[2].x + _loc2_[0].x) / 2,(_loc2_[2].y + _loc2_[0].y) / 2);
+      this.beginGradientFill("linear",[_loc2_[0].color,_loc2_[2].color],[100,100],[0,255],_loc3_);
+      this.moveTo(_loc2_[2].x,_loc2_[2].y);
+      this.lineTo(_loc2_[0].x,_loc2_[0].y);
+      this.lineTo(_loc2_[1].x,_loc2_[1].y);
+      this.lineTo(_loc2_[2].x,_loc2_[2].y);
+      this.endFill();
+   }
+   function createGradientFill(x1, y1, x2, y2, x3, y3)
+   {
+      var _loc6_ = Math.sqrt(Math.pow(Math.abs(x2 - x1),2) + Math.pow(Math.abs(y2 - y1),2));
+      if(Key.isDown(33))
+      {
+         this.gz = this.gz + 1;
+      }
+      var _loc7_ = this.getHeight(x2,y2,x3,y3,x1,y1);
+      var _loc11_ = Math.atan(_loc6_ / _loc7_) + this.rz;
+      this.__targetmc.lineStyle(0,16711680,0);
+      var _loc2_ = x1;
+      if(x2 < _loc2_)
+      {
+         _loc2_ = x2;
+      }
+      if(x3 < _loc2_)
+      {
+         _loc2_ = x3;
+      }
+      var _loc3_ = y1;
+      if(y2 < _loc3_)
+      {
+         _loc3_ = y2;
+      }
+      if(y3 < _loc3_)
+      {
+         _loc3_ = y3;
+      }
+      this.__targetmc.lineStyle(10,15727099,100);
+      this.__targetmc.beginGradientFill("linear",[5208213,15727099],[100,100],[0,255],{matrixType:"box",x:_loc2_,y:_loc3_,w:_loc6_,h:_loc7_,r:_loc11_});
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\layer.as ====
+class kage.classes.layer extends MovieClip
+{
+   var __xpos = 0;
+   var __ypos = 0;
+   var __depth = 1;
+   var __offsetX = 0;
+   var __offsetY = 0;
+   function layer()
+   {
+      super();
+      this.cacheAsBitmap = true;
+   }
+   function get xpos()
+   {
+      return this.__xpos;
+   }
+   function get ypos()
+   {
+      return this.__ypos;
+   }
+   function get depth()
+   {
+      return this.__depth;
+   }
+   function set depth(newdepth)
+   {
+      this.__depth = newdepth;
+   }
+   function set offsetX(ofx)
+   {
+      this.__offsetX = ofx;
+   }
+   function set offsetY(ofy)
+   {
+      this.__offsetY = ofy;
+   }
+   function setPos(xpos, ypos)
+   {
+      this.__xpos = xpos;
+      this.__ypos = ypos;
+      this._x = this.__xpos * this.__depth + this.__offsetX;
+      this._y = this.__ypos * this.__depth + this.__offsetY;
+   }
+   function setZoomedPos(xpos, ypos, zoom, scrw, scrh)
+   {
+      this.__xpos = xpos;
+      this.__ypos = ypos;
+      var _loc2_ = 0;
+      var _loc3_ = 0;
+      if(this.__depth > 0)
+      {
+      }
+      this._x = this.__xpos * this.__depth * zoom / 100 - _loc2_ + this.__offsetX;
+      this._y = this.__ypos * this.__depth * zoom / 100 + _loc3_ + this.__offsetY;
+   }
+   function addMovie(movieName, instanceName)
+   {
+      this.attachMovie(movieName,instanceName,this.getNextHighestDepth());
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\radiobutton.as ====
+class kage.classes.radiobutton extends MovieClip
+{
+   var onPress;
+   var mcActive;
+   var checked;
+   var __callback;
+   var __onset;
+   function radiobutton()
+   {
+      super();
+      this.cacheAsBitmap = true;
+      this.useHandCursor = true;
+      this.onPress = this.handlerPress;
+      this.mcActive._visible = this.checked;
+   }
+   function set Callback(func)
+   {
+      this.__callback = func;
+   }
+   function set OnClick(func)
+   {
+      this.__onset = func;
+   }
+   function Uncheck()
+   {
+      this.checked = false;
+      this.mcActive._visible = false;
+   }
+   function handlerPress()
+   {
+      if(this.__callback != null)
+      {
+         this.__callback();
+      }
+      if(this.__onset != null)
+      {
+         this.__onset();
+      }
+      this.checked = true;
+      this.mcActive._visible = this.checked;
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\slider.as ====
+class kage.classes.slider extends MovieClip
+{
+   var mcHandle;
+   var Min;
+   var txtValue;
+   var Max;
+   var OnChange;
+   var __startx;
+   var __mousedown = false;
+   var __value = kage.classes.slider.prototype.Min;
+   function slider()
+   {
+      super();
+      this.mcHandle.useHandCursor = true;
+      this.mcHandle.onPress = this.handlerPress;
+      this.mcHandle.onMouseUp = this.handlerMouseUp;
+      this.mcHandle.onMouseMove = this.handerMouseMove;
+      this.__value = this.Min;
+      this.txtValue._visible = false;
+      if(this.Max == 1)
+      {
+         this.txtValue.text = "off";
+      }
+      else
+      {
+         this.txtValue.text = "" + this.Min;
+      }
+   }
+   function get Value()
+   {
+      return this.__value;
+   }
+   function set Value(newval)
+   {
+      var _loc2_ = newval;
+      if(_loc2_ > this.Max)
+      {
+         _loc2_ = this.Max;
+      }
+      if(_loc2_ < this.Min)
+      {
+         _loc2_ = this.Min;
+      }
+      this.__value = _loc2_;
+      this.mcHandle._x = 15 + Math.round(this.__value * 100 / (this.Max - this.Min));
+      if(this.OnChange != null)
+      {
+         this.OnChange(this.__value);
+      }
+   }
+   function handlerPress()
+   {
+      this.__mousedown = true;
+      this.__startx = this._xmouse;
+      this._parent.txtValue._visible = true;
+   }
+   function handlerMouseUp()
+   {
+      this.__mousedown = false;
+      this._parent.txtValue._visible = false;
+   }
+   function handerMouseMove()
+   {
+      if(this.__mousedown)
+      {
+         var _loc2_ = this._parent._xmouse - this.__startx - 15;
+         if(_loc2_ > 100)
+         {
+            _loc2_ = 100;
+         }
+         if(_loc2_ < 0)
+         {
+            _loc2_ = 0;
+         }
+         this._parent.__value = Math.round((this._parent.Max - this._parent.Min) * _loc2_ / 100);
+         this._x = 15 + Math.round(this._parent.__value * 100 / (this._parent.Max - this._parent.Min));
+         if(this._parent.OnChange != null)
+         {
+            this._parent.OnChange(this._parent.__value);
+         }
+         if(this._parent.Max == 1)
+         {
+            if(this._parent.__value == 0)
+            {
+               this._parent.txtValue.text = "off";
+            }
+            else
+            {
+               this._parent.txtValue.text = "on";
+            }
+         }
+         else
+         {
+            this._parent.txtValue.text = this._parent.__value;
+         }
+         this._parent.txtValue._x = this._x - 12;
+      }
+   }
+}
+
+
+// ==== File: C:\Users\Promile\PycharmProjects\Paper_pilot\scripts\__Packages\kage\classes\viewport.as ====
+class kage.classes.viewport extends MovieClip
+{
+   var __height;
+   var __mc;
+   var __mask;
+   var __cameraTarget;
+   var __layers = Array();
+   var __width = 0;
+   var __cameraX = 0;
+   var __cameraY = 0;
+   var __cameraZoom = 100;
+   var __cameraBoundX = 0;
+   var __cameraBoundY = 0;
+   var __cameraMode = 0;
+   var __cameraZoomTarget = 100;
+   var __cameraVar2 = 0;
+   function viewport(vp_Width, vp_Height, vp_Xpos, vp_Ypos)
+   {
+      super();
+      this.__width = vp_Width;
+      this.__height = vp_Height;
+      this.__mc = _root.createEmptyMovieClip("__mc",_root.getNextHighestDepth());
+      this.__mask = _root.createEmptyMovieClip("__mask",_root.getNextHighestDepth());
+      kage.classes.common.drawRect(this.__mask,0,0,this.__width,this.__height,16711680,0);
+      this.__mask._x = vp_Xpos;
+      this.__mask._y = vp_Ypos;
+      this.__mc.setMask(this.__mask);
+      this.__mc._x = vp_Xpos;
+      this.__mc._y = vp_Ypos;
+   }
+   function get offsetX()
+   {
+      return this.__width / 2;
+   }
+   function get offsetY()
+   {
+      return this.__height / 2;
+   }
+   function get movieClip()
+   {
+      return this.__mc;
+   }
+   function setCameraBounds(maxwidth, maxheight)
+   {
+      this.__cameraBoundX = maxwidth;
+      this.__cameraBoundY = maxheight;
+   }
+   function setCamera(xpos, ypos)
+   {
+      this.__cameraX = xpos;
+      this.__cameraY = ypos;
+      this.renderView();
+   }
+   function setCameraZoom(zoom)
+   {
+      this.__cameraZoom = zoom;
+      for(var _loc3_ in this.__layers)
+      {
+         if(this.__layers[_loc3_].depth > 0)
+         {
+            this.__layers[_loc3_]._xscale = zoom;
+            this.__layers[_loc3_]._yscale = zoom;
+         }
+      }
+   }
+   function setCameraZoomTarget(zoom)
+   {
+      this.__cameraZoomTarget = zoom;
+   }
+   function setCameraModeFollow(target)
+   {
+      this.__cameraTarget = target;
+      this.__cameraMode = 1;
+      this.renderView();
+   }
+   function renderView()
+   {
+      if(this.__cameraZoom < this.__cameraZoomTarget)
+      {
+         var _loc5_ = this.__cameraZoom + 4;
+         if(_loc5_ > this.__cameraZoomTarget)
+         {
+            _loc5_ = this.__cameraZoomTarget;
+         }
+         this.setCameraZoom(_loc5_);
+      }
+      else if(this.__cameraZoom > this.__cameraZoomTarget)
+      {
+         _loc5_ = this.__cameraZoom - 4;
+         if(_loc5_ < this.__cameraZoomTarget)
+         {
+            _loc5_ = this.__cameraZoomTarget;
+         }
+         this.setCameraZoom(_loc5_);
+      }
+      if(this.__cameraMode == 1)
+      {
+         var _loc3_ = this.__cameraTarget._x - this.__cameraX;
+         var _loc2_ = Math.abs(_loc3_);
+         var _loc6_ = _loc3_ / _loc2_;
+         if(_loc2_ > 16)
+         {
+            this.__cameraX += _loc6_ * (_loc2_ - 16) / 8;
+         }
+         _loc3_ = this.__cameraTarget._y - this.__cameraY;
+         _loc2_ = Math.abs(_loc3_);
+         _loc6_ = _loc3_ / _loc2_;
+         if(_loc2_ > 10)
+         {
+            this.__cameraY += _loc6_ * (_loc2_ - 10) / 8;
+         }
+      }
+      if(this.__cameraX > this.__cameraBoundX - 100 / this.__cameraZoom * this.__width / 2)
+      {
+         this.__cameraX = this.__cameraBoundX - 100 / this.__cameraZoom * this.__width / 2;
+      }
+      if(this.__cameraX < - (this.__cameraBoundX - 100 / this.__cameraZoom * this.__width / 2))
+      {
+         this.__cameraX = - (this.__cameraBoundX - 100 / this.__cameraZoom * this.__width / 2);
+      }
+      if(this.__cameraY > this.__cameraBoundY - 100 / this.__cameraZoom * this.__height / 2)
+      {
+         this.__cameraY = this.__cameraBoundY - 100 / this.__cameraZoom * this.__height / 2;
+      }
+      if(this.__cameraY < - (this.__cameraBoundY - 100 / this.__cameraZoom * this.__height / 2))
+      {
+         this.__cameraY = - (this.__cameraBoundY - 100 / this.__cameraZoom * this.__height / 2);
+      }
+      for(var _loc4_ in this.__layers)
+      {
+         this.__layers[_loc4_].setZoomedPos(- this.__cameraX,- this.__cameraY,this.__cameraZoom,this.__width,this.__height);
+      }
+   }
+   function addLayer(idName, newName, depth)
+   {
+      var tmpLayer;
+      if(eval("__mc." + newName) != null)
+      {
+         eval("__mc." + newName).removeMovieClip();
+      }
+      tmpLayer = this.__mc.attachMovie(idName,newName,this.__mc.getNextHighestDepth());
+      tmpLayer._x = this.__width / 2;
+      tmpLayer._y = this.__height / 2;
+      tmpLayer.depth = depth;
+      tmpLayer.offsetX = this.__width / 2;
+      tmpLayer.offsetY = this.__height / 2;
+      tmpLayer.cacheAsBitmap = true;
+      this.__layers.push(tmpLayer);
+   }
+   function clearLayers()
+   {
+      for(var _loc2_ in this.__layers)
+      {
+         this.__layers[_loc2_].removeMovieClip();
+      }
+      this.__layers = new Array();
+   }
+}
+
+

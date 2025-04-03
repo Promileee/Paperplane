@@ -1,0 +1,4 @@
+if(onLaunchSample != null)
+{
+   onLaunchSample();
+}
