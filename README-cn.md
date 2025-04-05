@@ -43,14 +43,13 @@ Python提供了一个库`pyautogui`，可以使用之进行基础的鼠标键盘
 在进行测试时发现当 $|target\_para - current\_para|$ 的值过大时，拖拽识别会失效，因此我在这个函数内又增加了一个嵌套调用：如果 $|target\_para - current\_para| > 50$，那么先调整至 $current\_para \pm 50$，再调整至 $target\_para$。
 ### 试飞操作
 试飞操作亦很简单，我们首先给定初始时纸飞机的坐标值[x_init, y_init]，然后根据[angle, force]计算目标坐标值。
-
-$target\_x = x\_init - force * cos(angle)$
-
-$target\_y = x\_init + force * sin(angle)$
-
+$$target\_x = x\_init - force * cos(angle)$$
+$$target\_y = x\_init + force * sin(angle)$$
 之后从初始坐标拖动至目标坐标，然后松开鼠标即可。
 ### 试验结果识别
 试验结果识别同样基于屏幕截图的识别，给定右下角一个指定的范围，识别RGB=[225, 225, 225]的纯白色内容并制成模板，识别数字即可。
+
+**需要注意的是，识别偶尔会错误，因此我保留了初始的截屏结果，需要手工复核。尽管如此，这也极大节省了人力成本。**
 ## 试验设计操作与建模分析
 本次试验设计我按照如下的思路进行。
 ### 因子分析
@@ -73,3 +72,95 @@ Paper Pilot 模拟器在参数设置界面提供了4个可供调整的参数，�
 5. [E] : - = 15, + = 60
 6. [F] : - = 40, + = 120
 如此我们便构成了一个 $2^{6} = 64$ 的样本空间，使用[pre_experiment.py](https://github.com/Promileee/Paperplane/blob/main/pre_experiment.py)在该样本空间上进行试验，得到的结果保存至[pre_experiment.xlsx](https://github.com/Promileee/Paperplane/blob/main/pre_experiment.xlsx)文件中。
+
+对于该试验结果，我们分析其主效应与交互效应：
+$$Effect = \frac{\sum{符号向量 \times 响应值}}{N}$$
+由于在本试验中我们采用了`GUI`的操作方式，通过拾取坐标的方式进行试验，从而消除了试验中的不确定性，因此我们的重复次数 $n=1$。 之后计算其对照：
+$$ Contrast\_effect = Effect \times n \cdot 2^{k-1}$$
+据此我们可以计算各个效应引起的误差平方和以及总误差平方和：
+$$SS\_effect = \frac{(Contrast\_effect)^{2}}{n \cdot 2 ^{k}}$$
+$$SS_{T} = \sum_{i}\sum_j\sum_k(y_{i,j,k} - \bar{y})^{2}$$
+此时有：
+$$SS_{T} = \sum_{effect}SS_{effect} + SS_{E}$$
+计算得到：
+$$SS_{T} = 1365.63359375$$
+$$\sum_{effect}{SS_{effect}} = 1365.63359375$$
+于是有：
+$$SS_{E} = SS_{T} - \sum_{effect}{SS_{effect}} = -9.09494701772928E-13$$
+可以看到误差引起的离均平方和的数量级是 $10^{-13}$，几乎可以认为是计算机储存浮点数引起的偏差。这验证了我们认为通过`GUI`操作可以避免波动的推测。之后我们可以计算每种效应在总效应中的贡献值，即
+$$Distribution\_rate_{effect} = \frac{SS_{effect}}{SS_{T}} \times 100\%$$
+我将计算的结果绘制出来如图所示：
+
+![effect_analysis](/effect_analysis.png "效应分析")
+
+我们拾取贡献率大于 $5\%$ 的效应，如图所示：
+
+![main_effect](/main_effect_analysis.png "主效应分析")
+可以看到目前主效应为投掷的角度与力度以及它俩之间的交互，与其他效应的交互并不显著。因此我们密集采点，对投掷角度、投掷力度与飞行距离之间的关系进行试验，结果如图所示：
+
+![angle_and_force_to_score](/contour_plot.png "等高线图")
+
+我们发现小角度大力度的投掷方式能够取得较高的分数。我们取角度为22.5，力度为200的投掷方式为固定的投掷方式，再对其他四个参数进行2k试验分析，实现降维操作。
+### 降维后再次析因设计
+我使用2k析因设计的原则，对[A, B, C, D]四个因子分别取高水平和低水平，具体如下：
+1. [A] : - = 'A', + = 'C'
+2. [B] : - = 10, + = 50
+3. [C] : - = 10, + = 50
+4. [D] : - = 'OFF', + = 'ON'
+如此我们便构成了一个 $2^{64} = 16$ 的样本空间，使用[pre_experiment.py](https://github.com/Promileee/Paperplane/blob/main/pre_experiment.py)在该样本空间上进行试验，得到的结果保存至[experiment.xlsx](https://github.com/Promileee/Paperplane/blob/main/experiment_2k.xlsx)文件中。
+
+对于该试验结果，我们分析其主效应与交互效应：
+$$Effect = \frac{\sum{符号向量 \times 响应值}}{N}$$
+由于在本试验中我们采用了`GUI`的操作方式，通过拾取坐标的方式进行试验，从而消除了试验中的不确定性，因此我们的重复次数 $n=1$。 之后计算其对照：
+$$ Contrast\_effect = Effect \times n \cdot 2^{k-1}$$
+据此我们可以计算各个效应引起的误差平方和以及总误差平方和：
+$$SS\_effect = \frac{(Contrast\_effect)^{2}}{n \cdot 2 ^{k}}$$
+$$SS_{T} = \sum_{i}\sum_j\sum_k(y_{i,j,k} - \bar{y})^{2}$$
+此时有：
+$$SS_{T} = \sum_{effect}SS_{effect} + SS_{E}$$
+计算得到：
+$$SS_{T} = 2544.829375$$
+$$\sum_{effect}{SS_{effect}} = 2544.829375$$
+于是有：
+$$SS_{E} = SS_{T} - \sum_{effect}{SS_{effect}} = 0$$
+可以看到误差引起的离均平方和为0，这再次印证了我们对该种试验方式可以忽略随机波动的影响这一推测。于是我们计算各个效应的贡献率：
+$$Distribution\_rate_{effect} = \frac{SS_{effect}}{SS_{T}} \times 100\%$$
+我将计算的结果绘制出来如图所示：
+
+![effect_analysis](/effect_analysis_2.png "效应分析")
+
+我们拾取贡献率大于 $2\%$ 的效应，如图所示：
+
+![main_effect](/main_effect_analysis_2.png "主效应分析")
+
+可以看到贡献最大的效应是[B, BD, D, A]，而A与其他效应的交互不显著。
+### 密集采点试验
+对此，我们对[A, B, C, D]进行密集采点试验。
+1. [A] = ['A', 'B', 'C']
+2. [B] = [20, 25, 30, 35, 40, 45, 50]
+3. [C] = [20, 25, 30, 35]
+4. [D] : ['ON', 'OFF']
+试验结果储存于[experiment_3.xlsx](https://github.com/Promileee/Paperplane/blob/main/experiment_3.xlsx)
+
+我们计算对A不同取值时飞机的飞行距离如下：
+$$\bar{Score}_{type=A} = \frac{\sum_{type=A}{score}}{num\_type=A}=10.25942$$
+$$\bar{Score}_{type=B} = \frac{\sum_{type=B}{score}}{num\_type=B}=7.25271$$
+$$\bar{Score}_{type=C} = \frac{\sum_{type=C}{score}}{num\_type=C}=14.03751$$
+显然，C飞机的飞行距离显著大于A和B。
+
+之后，我们对C的试验结果进行最大值提取，发现当参数置于[A='C', B=30, C=25, D='ON']到[A='C', B=45, C=35, D='ON']时，试验分数达到显著的最大值。我们推测最优参数出现在这一区间，对这个区间进行密集取点试验。
+### 最优参数寻找
+对此，我们对[A, B, C, D]进行密集采点试验。
+1. [A] = ['C']
+2. [B] = 30 到 45 的所有整数
+3. [C] = 25 到 35 的所有整数
+4. [D] : ['ON']
+试验结果储存于[experiment_4.xlsx](https://github.com/Promileee/Paperplane/blob/main/experiment_4.xlsx)。
+
+我们将试验结果绘制出来如图所示：
+
+![EF](/contour_plot_2.png)
+
+最终，我们得到，在参数[A='C', B=37, C=30, D='ON', E=22.5, F=200]时，飞行距离达到最大，为48.2m。
+
+![highest_score](/highest_score.png "最大距离")
