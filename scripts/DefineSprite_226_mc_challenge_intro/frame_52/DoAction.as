@@ -1,4 +1,0 @@
-if(onEnterForm != null)
-{
-   onEnterForm();
-}

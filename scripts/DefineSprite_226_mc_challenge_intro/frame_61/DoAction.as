@@ -1,4 +1,0 @@
-if(onStartZoom != null)
-{
-   onStartZoom();
-}
