@@ -179,11 +179,11 @@ $$Distribution\_rate_{effect} = \frac{SS_{effect}}{SS_{T}} \times 100\%$$
 
 我们计算对A不同取值时飞机的飞行距离如下：
 
-$$\bar{Score}_{type=A} = \frac{\sum_{type=A}{score}}{num\_type=A}=10.25942$$
+$$$\bar{Score}_{type=A} = \frac{\sum_{type=A}{score}}{num\_type=A}=10.25942$$$
 
-$$\bar{Score}_{type=B} = \frac{\sum_{type=B}{score}}{num\_type=B}=7.25271$$
+$$$\bar{Score}_{type=B} = \frac{\sum_{type=B}{score}}{num\_type=B}=7.25271$$$
 
-$$\bar{Score}_{type=C} = \frac{\sum_{type=C}{score}}{num\_type=C}=14.03751$$
+$$$\bar{Score}_{type=C} = \frac{\sum_{type=C}{score}}{num\_type=C}=14.03751$$$
 
 显然，C飞机的飞行距离显著大于A和B。
 
